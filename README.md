@@ -9,11 +9,11 @@ FGA - Faculdade do Gama
     
 2. **Formas de avaliação**  
 	2.1 Trabalho prático dividido em três entregas  
-	    Será considerado para efeitos de cálculo de menção. 
+	    Será considerado para efeitos de cálculo de menção.  
 	2.2 Exercícios ao final de cada aula  
-	    Não será considerado para efeitos de cálculo de menção.
+	    Não será considerado para efeitos de cálculo de menção.  
 	2.3 Desafios de programação, utilizando OO na resolução  
-	    Será considerado **apenas** para "arredondamento" de menção. Somente serão feitos arredondamentos para os alunos que tiverem feito todos os desafios e que as soluções estejam corretas. 
+	    Será considerado **apenas** para "arredondamento" de menção. Somente serão feitos arredondamentos para os alunos que tiverem feito todos os desafios e que as soluções estejam corretas.  
 	
 3. **Lista de presença**
 
