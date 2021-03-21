@@ -1,4 +1,4 @@
-# Aula 5 - Encapsulamento (1a. parte)
+# Aula 2 - Revisão de Computação Básica / Programação
 ---
 
 Slides para a aula: [slides]
@@ -8,4 +8,4 @@ Slides para a aula: [slides]
 
 
 
-[slides]: https://docs.google.com/presentation/d/1NlT3-k4Sdw1Yt9WbTwWN7Q8fhQCokuBOnGoT1tEQgv0/edit?usp=sharing
+[slides]: https://docs.google.com/presentation/d/1j8NajD7h2xyqsl8uOBccOlaWaxvXVulfMjdsQxN_Xs0/edit?usp=sharing
