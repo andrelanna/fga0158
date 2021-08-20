@@ -7,7 +7,7 @@ Prof. André Luiz Peron Martins Lanna
 
 Projeto do exercício de exemplo: 
 
-(O arquivo '''aula_introducaoOO.drawio''' pode ser aberto na ferramenta Draw.io)
+(O arquivo ```aula_introducaoOO.drawio``` pode ser aberto na ferramenta Draw.io)
 
 # Diagrama de Classes
 
