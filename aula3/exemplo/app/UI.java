@@ -3,10 +3,13 @@ package app;
 import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
+
+	static Retangulo[] retangulos = new Retangulo[0];
 
 	
 	
@@ -45,6 +48,20 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
+				String strLadoRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				float ladoRetangulo = Float.parseFloat(strLadoRetangulo);
+				String strBaseRetangulo = JOptionPane.showInputDialog("Informe a base do retangulo:");
+				float baseRetangulo = Float.parseFloat(strBaseRetangulo);
+				Retangulo q = new Retangulo(ladoRetangulo, baseRetangulo);
+
+				Retangulo[] temp = new Retangulo[retangulos.length + 1];
+				for (int i=0; i<retangulos.length; i++) {
+					temp[i] = retangulos[i];
+				}
+			
+				temp[retangulos.length] = q;
+				
+				retangulos = temp;
 				break;
 
 			case 3: 
