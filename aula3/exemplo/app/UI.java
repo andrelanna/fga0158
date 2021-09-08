@@ -3,12 +3,14 @@ package app;
 import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
+import figurasGeometricas.Circulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
-
-	
+	static Retangulo[] retangulos = new Retangulo[0];  //referencia representa a associacao MULTIPLA entre UI e Retangulo
+	static Circulo[] circulos = new Circulo[0];  //referencia representa a associacao MULTIPLA entre UI e Circulo
 	
 	public static void main(String[] args) {
 		//Aqui é onde tudo começa! 
@@ -32,23 +34,55 @@ public class UI {
 
 				//inserir q dentro do vetor quadrados.
 				//Esforco bracal! 
-				Quadrado[] temp = new Quadrado[quadrados.length + 1];
+				Quadrado[] tempQuadrados = new Quadrado[quadrados.length + 1];
 				for (int i=0; i<quadrados.length; i++) {
-					temp[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
+					tempQuadrados[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
 				}
 				//inserir q em temp
-				temp[quadrados.length] = q;
+				tempQuadrados[quadrados.length] = q;
 				//atualizar referencia de quadrados
-				quadrados = temp;
+				quadrados = tempQuadrados;
 
 				break;
 
 			case 2: 
 				//criar retangulo
+				String strAlturaRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				String strComprimentoRetangulo = JOptionPane.showInputDialog("Informe o comprimento do retangulo:");
+				float alturaRetangulo = Float.parseFloat(strAlturaRetangulo);
+				float comprimentoRetangulo = Float.parseFloat(strComprimentoRetangulo);
+				Retangulo r = new Retangulo(alturaRetangulo, comprimentoRetangulo);
+
+				// inserir r dentro do vetor retangulos.
+				// Esforco bracal!
+				Retangulo[] tempRetangulos = new Retangulo[retangulos.length + 1];
+				for (int i = 0; i < retangulos.length; i++) {
+					tempRetangulos[i] = retangulos[i]; // copiando todas referencias de retangulos em temp
+				}
+				// inserir q em temp
+				tempRetangulos[retangulos.length] = r;
+				// atualizar referencia de quadrados
+				retangulos = tempRetangulos;
+
 				break;
 
 			case 3: 
 				//criar circulo
+				String strRaioCirculo = JOptionPane.showInputDialog("Informe o lado do circulo:");
+				float raioCirculo = Float.parseFloat(strRaioCirculo);
+				Circulo c = new Circulo(raioCirculo);
+
+				// inserir q dentro do vetor circulos.
+				// Esforco bracal!
+				Circulo[] tempCirculos = new Circulo[circulos.length + 1];
+				for (int i = 0; i < circulos.length; i++) {
+					tempCirculos[i] = circulos[i]; // copiando todas referencias de circulos em temp
+				}
+				// inserir q em temp
+				tempCirculos[circulos.length] = c;
+				// atualizar referencia de circulos
+				circulos = tempCirculos;
+
 				break;
 
 			case 0: 
@@ -62,8 +96,7 @@ public class UI {
 		} while (opcao != 0);
 
 		//Imprimir todas as areas e perimetros das figuras geometricas criadas
-		//Comecando pelos quadrados
-
+		//Imprimir quadrados
 		for (int i=0; i<quadrados.length; i++) {
 			String resposta = "Quadrado " + i + "(" + quadrados[i] + ")" + ":\n"
 					+ "Lado: " + quadrados[i].getLado() + "\n"
@@ -73,8 +106,26 @@ public class UI {
 			JOptionPane.showMessageDialog(null, resposta);
 		}
 
+		// Imprimir retangulos
+		for (int i=0; i<retangulos.length; i++) {
+			String resposta = "Retangulo " + i + "(" + retangulos[i] + ")" + ":\n"
+					+ "Altura: " + retangulos[i].getAltura() + "\n"
+					+ "Comprimento: " + retangulos[i].getComprimento() + "\n"
+					+ "Area: " + retangulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + retangulos[i].calcularPerimetro();
 
-			//Fazer com as demais figuras geometricas
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+
+		// Imprimir circulos
+		for (int i=0; i<circulos.length; i++) {
+			String resposta = "Circulo " + i + "(" + circulos[i] + ")" + ":\n"
+					+ "Lado: " + circulos[i].getRaio() + "\n"
+					+ "Area: " + circulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + circulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
 
 	}
 
