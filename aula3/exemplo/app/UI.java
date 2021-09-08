@@ -3,12 +3,14 @@ package app;
 import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
 import figurasGeometricas.Circulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
 	static Circulo[] circulos = new Circulo[0];  //referencia representa a associacao MULTIPLA entre UI e Circulo
+	static Retangulo[] retangulos = new Retangulo[0];  //referencia representa a associacao MULTIPLA entre UI e Retangulo
 	
 	
 	public static void main(String[] args) {
@@ -46,6 +48,22 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
+				String strBaseRetangulo = JOptionPane.showInputDialog("Informe a base do retangulo:");
+				float baseRetangulo = Float.parseFloat(strBaseRetangulo);
+				String strAlturaRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				float alturaRetangulo = Float.parseFloat(strAlturaRetangulo);
+				Retangulo r = new Retangulo(baseRetangulo, alturaRetangulo);
+
+				//inserir r dentro do vetor retangulos.
+				//Esforco bracal! 
+				Retangulo[] temp2 = new Retangulo[retangulos.length + 1];
+				for (int i=0; i<circulos.length; i++) {
+					temp2[i] = retangulos[i];  //copiando todas referencias de retangulos em temp2
+				}
+				//inserir r em temp2
+				temp2[retangulos.length] = r;
+				//atualizar referencia de retangulos
+				retangulos = temp2;
 				break;
 
 			case 3: 
@@ -86,6 +104,15 @@ public class UI {
 					+ "Lado: " + quadrados[i].getLado() + "\n"
 					+ "Area: " + quadrados[i].calcularArea() + "\n"
 					+ "Perimetro: " + quadrados[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+		for (int i=0; i<retangulos.length; i++) {
+			String resposta = "Retangulo " + i + "(" + retangulos[i] + ")" + ":\n"
+					+ "Base: " + retangulos[i].getBase() + "\n"
+					+ "Altura: " + retangulos[i].getAltura() + "\n"
+					+ "Area: " + retangulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + retangulos[i].calcularPerimetro();
 
 			JOptionPane.showMessageDialog(null, resposta);
 		}
