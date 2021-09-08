@@ -2,22 +2,27 @@ package figurasGeometricas;
 
 public class Retangulo {
 
-    private double altura;
-    private double largura;
+    private float altura;
+    private float largura;
 
-    public setAltura(double altura) {
-        this.altura = altura;
+    public Retangulo(float alturaRetangulo, float larguraRetangulo) {
+        this.altura = alturaRetangulo;
+        this.largura = larguraRetangulo;
     }
 
-    public setLargura(double largura) {
-        this.largura = largura;
+    public float calcularPerimetro() {
+        return (altura * 2) + (largura * 2);
     }
 
-    public double area() {
+    public float calcularArea() {
         return altura * largura;
     }
 
-    public double perimetro() {
-        return (altura * 2) + (largura * 2);
+    public float getAltura() {
+        return altura;
+    }
+
+    public float getLargura() {
+        return largura;
     }
 }
