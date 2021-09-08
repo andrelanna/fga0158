@@ -4,10 +4,17 @@ import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
 
+import figurasGeometricas.Retangulo;
+
+import figurasGeometricas.Circulo;
+
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
 
+	static Retangulo[] retangulos = new Retangulo[0]; //referencia representa a associacao MULTIPLA entre UI e Retangulo
+
+	static Circulo[] circulos = new Circulo[0];		//referencia representa a associacao MULTIPLA entre UI e Circulo
 	
 	
 	public static void main(String[] args) {
@@ -45,11 +52,43 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
+				String strAlturaRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				Float alturaRetangulo = Float.parseFloat(strAlturaRetangulo);
+				String strcompRetangulo = JOptionPane.showInputDialog("Informe o comprimento do retangulo:");
+				Float compRetangulo = Float.parseFloat(strcompRetangulo);
+				Retangulo r = new Retangulo(alturaRetangulo, compRetangulo);
+
+				//inserir r dentro do vetor retangulos.
+				//Esforco bracal! 
+				Retangulo[] temp1 = new Retangulo[retangulos.length + 1];
+				for (int i=0; i<retangulos.length; i++) {
+					temp1[i] = retangulos[i];  //copiando todas referencias de quadrados em temp
+				}
+				//inserir q em temp
+				temp1[retangulos.length] = r;
+				//atualizar referencia de quadrados
+				retangulos = temp1;
 				break;
 
 			case 3: 
-				//criar circulo
+				//criar Circulo
+				String strRaioCirculo = JOptionPane.showInputDialog("Informe o raio do circulo:");
+				double raioCirculo = Double.parseDouble(strRaioCirculo);
+				Circulo c = new Circulo(raioCirculo);
+
+				//inserir q dentro do vetor circulos.
+				//Esforco bracal! 
+				Circulo[] temp2 = new Circulo[circulos.length + 1];
+				for (int i=0; i<circulos.length; i++) {
+					temp2[i] = circulos[i];  //copiando todas referencias de quadrados em temp
+				}
+				//inserir q em temp
+				temp2[circulos.length] = c;
+				//atualizar referencia de quadrados
+				circulos = temp2;
+ 
 				break;
+
 
 			case 0: 
 				//sair do programa
@@ -73,24 +112,28 @@ public class UI {
 			JOptionPane.showMessageDialog(null, resposta);
 		}
 
+		for (int i=0; i<retangulos.length; i++) {
+			String resposta = "Retangulo " + i + "(" + retangulos[i] + ")" + ":\n"
+					+ "Altura: " + retangulos[i].getAltura() + "\n"
+					+ "Comprimento: " + retangulos[i].getComprimento() + "\n"
+					+ "Area: " + retangulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + retangulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+
+		for (int i=0; i<circulos.length; i++) {
+			String resposta = "Circulo " + i + "(" + circulos[i] + ")" + ":\n"
+					+ "Raio: " + circulos[i].getRaio() + "\n"
+					+ "Area: " + circulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + circulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+
 
 			//Fazer com as demais figuras geometricas
 
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
