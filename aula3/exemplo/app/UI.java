@@ -107,6 +107,24 @@ public class UI {
 
 			JOptionPane.showMessageDialog(null, resposta);
 		}
+		for (int i=0; i< retangulos.length; i++) {
+			String resposta = "Retangulo " + i + " (" + retangulos[i] + ")" + ":\n"
+					+ "Altura: " + retangulos[i].getAltura() + "\n"
+					+ "Largura: " + retangulos[i].getLargura() + "\n"
+					+ "Area: " + retangulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + retangulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+
+		for (int i=0; i<circulos.length; i++) {
+			String resposta = "Circulo " + i + " (" + circulos[i] + ")" + ":\n"
+					+ "Raio: " + circulos[i].getRaio() + "\n"
+					+ "Area: " + circulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + circulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
 	}
 
 }
