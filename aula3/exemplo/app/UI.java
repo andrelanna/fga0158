@@ -3,16 +3,16 @@ package app;
 import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
+import figurasGeometricas.Circulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
+	static Retangulo[] retangulos = new Retangulo[0];  //referencia representa a associacao MULTIPLA entre UI e Retangulo
+	static Circulo[] circulos = new Circulo[0];  //referencia representa a associacao MULTIPLA entre UI e Circulo
 
-	
-	
 	public static void main(String[] args) {
-		//Aqui é onde tudo começa! 
-		
 		int opcao;
 		do { 
 			//1a coisa: definir qual figura vai ser criada
@@ -30,25 +30,43 @@ public class UI {
 				float ladoQuadrado = Float.parseFloat(strLadoQuadrado);
 				Quadrado q = new Quadrado(ladoQuadrado);
 
-				//inserir q dentro do vetor quadrados.
-				//Esforco bracal! 
-				Quadrado[] temp = new Quadrado[quadrados.length + 1];
+				Quadrado[] tempQuadrado = new Quadrado[quadrados.length + 1];
 				for (int i=0; i<quadrados.length; i++) {
-					temp[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
+					tempQuadrado[i] = quadrados[i];
 				}
-				//inserir q em temp
-				temp[quadrados.length] = q;
-				//atualizar referencia de quadrados
-				quadrados = temp;
+				tempQuadrado[quadrados.length] = q;
+				quadrados = tempQuadrado;
 
 				break;
 
-			case 2: 
+			case 2:
 				//criar retangulo
+				String strLadoMaiorRetangulo = JOptionPane.showInputDialog("Informe o lado maior do retangulo:");
+				String strLadoMenorRetangulo = JOptionPane.showInputDialog("Informe o lado menor do retangulo:");
+				float ladoMaiorRetangulo = Float.parseFloat(strLadoMenorRetangulo);
+				float ladoMenorRetangulo = Float.parseFloat(strLadoMaiorRetangulo);
+				Retangulo r = new Retangulo(ladoMaiorRetangulo, ladoMenorRetangulo);
+
+				Retangulo[] tempRetangulo = new Retangulo[retangulos.length + 1];
+				for (int i=0; i<retangulos.length; i++) {
+					tempRetangulo[i] = retangulos[i];
+				}
+				tempRetangulo[retangulos.length] = r;
+				retangulos = tempRetangulo;
 				break;
 
 			case 3: 
 				//criar circulo
+				String strRaioCirculo = JOptionPane.showInputDialog("Informe o raio do circulo:");
+				float raioCirculo = Float.parseFloat(strRaioCirculo);
+				Circulo c = new Circulo(raioCirculo);
+
+				Circulo[] tempCirculo = new Circulo[circulos.length + 1];
+				for (int i=0; i<circulos.length; i++) {
+					tempCirculo[i] = circulos[i];
+				}
+				tempCirculo[circulos.length] = c;
+				circulos = tempCirculo;				
 				break;
 
 			case 0: 
