@@ -1,0 +1,43 @@
+//Leonardo Sampaio Barros - 17/0038971
+
+import java.util.Scanner;
+import java.lang.Math;
+
+class Formas{
+	public static void main(String[] args) {
+
+		System.out.println("Bem-vindo ao calculador de área!");
+		System.out.println("Informe quantos objetos quer calcular: ");
+
+		Scanner input = new Scanner(System.in);
+		num = input.nextInt();
+		for(int i = 0; i < num;i++){
+			System.out.println("Digite 1 para circulo, 2 para quadrado");
+			forma = input.nextInt();
+			if(forma == 1){
+				double raio, area, perimetro;
+				double PI = 3.1416;
+				//coletando os valores do usuário
+				System.out.println("Informe o valor de raio");
+				raio = input.nextDouble();
+				//calculando
+				area = raio*raio*PI;
+				perimetro = 2*PI*raio;
+				System.out.println("O valor da area do circulo é: "+area);
+				System.out.println("O valor do perimetro do circulo é: "+perimetro);
+			}
+			if(forma == 2){
+				double ladoq, areaq, perimetroq;
+				//coletando valores do usuário
+				System.out.println("Informe o valor do lado");
+				ladoq = input.nextDouble();
+				//calculando
+				areaq = ladoq*ladoq;
+				perimetroq = 4*ladoq;
+				System.out.println("O valor da area do quadrado é:" +areaq );
+				System.out.println("O valor do perimetro é: "+perimetroq);
+			}   
+		}
+		input.close();
+	}
+}
