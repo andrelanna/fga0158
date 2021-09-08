@@ -4,6 +4,7 @@ import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
 import figurasGeometricas.Circulo;
+import figurasGeometricas.Retangulo;
 
 public class UI {
 	
