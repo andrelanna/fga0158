@@ -2,22 +2,21 @@ package figurasGeometricas;
 
 public class Circulo {
 
-	private float raio;
+    private float raio;
 
-	public float getRaio() {
-		return raio;
-  }
-	public Circulo(float valorraio) {
-		this.raio = valorraio;
-	}
+    public Circulo(float raioCirculo) {
+        this.raio = raioCirculo;
+    }
 
-	public float calcularPerimetro() {
-		return 2 * 3.14 * raio; 
-	}
-	
-	public float calcularArea() {
-		return 3.14 * (getRaio() * getRaio()); 
-	}
+    public float calcularPerimetro() {
+        return (float)(2*(Math.PI*raio));
+    }
 
-	
+    public float calcularArea() {
+        return  (float)(Math.PI*(Math.pow(raio,2)));
+    }
+
+    public float getRaio() {
+        return raio;
+    }
 }
