@@ -2,11 +2,15 @@ package app;
 
 import javax.swing.JOptionPane;
 
+import figurasGeometricas.Circulo;
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
+	static Circulo[] circulos = new Circulo[0];
+	static Retangulo[] retangulos = new Retangulo[0];
 
 	
 	
@@ -45,10 +49,36 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
+				String stralturaretangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				String strLarguraRetangulo = JOptionPane.showInputDialog("Informe a largura do retangulo:");
+				float alturaRetangulo = Float.parseFloat(stralturaretangulo);
+				float larguraRetangulo = Float.parseFloat(strLarguraRetangulo);
+				Retangulo r = new Retangulo(larguraRetangulo,alturaRetangulo);
+
+				//inserir q dentro do vetor retangulos.
+				//Esforco bracal! 
+				Retangulo[] tempRetangulo = new Retangulo[retangulos.length + 1];
+				for (int i=0; i<retangulos.length; i++) {
+					tempRetangulo[i] = retangulos[i];  //copiando todas referencias de retangulos em temp
+				}
+				//inserir q em temp
+				tempRetangulo[retangulos.length] = r;
+				//atualizar referencia de retangulos
+				retangulos = tempRetangulo;
 				break;
 
 			case 3: 
 				//criar circulo
+				String strLadoCirculo = JOptionPane.showInputDialog("Informe o tamanho do raio :");
+				float raioCirculo = Float.parseFloat(strLadoCirculo);
+				Circulo c = new Circulo(raioCirculo);
+
+				Circulo[] tempCirculo = new Circulo[circulos.length + 1];
+				for (int i=0; i<circulos.length; i++) {
+					tempCirculo[i] = circulos[i];
+				}
+				tempCirculo[circulos.length] = c;
+				circulos = tempCirculo;
 				break;
 
 			case 0: 
@@ -72,10 +102,32 @@ public class UI {
 
 			JOptionPane.showMessageDialog(null, resposta);
 		}
+		// imprime Retangulo
+		for (int i=0; i<retangulos.length; i++) {
+			String resposta = "retangulo " + i + "(" + retangulos[i] + ")" + ":\n"
+					+ "Altura: " + retangulos[i].getAltura() + "\n"
+					+ "Largura: " + retangulos[i].getLargura() + "\n"
+					+ "Area: " + retangulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + retangulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
 
 
-			//Fazer com as demais figuras geometricas
+		
+		//Imprime Circulo
 
+		for (int i=0; i<circulos.length; i++) {
+			String resposta = "Circulo " + i + "(" + circulos[i] + ")" + ":\n"
+					+ "Raio: " + circulos[i].getRaio() + "\n"
+					+ "Area: " + circulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + circulos[i].calcularPerimetro() + "\n"
+					+ "Diametro: " + circulos[i].calcularDiametro() + "\n";
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+		
+		
 	}
 
 }
