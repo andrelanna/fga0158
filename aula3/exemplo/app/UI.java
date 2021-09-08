@@ -39,14 +39,14 @@ public class UI {
 
 				//inserir q dentro do vetor quadrados.
 				//Esforco bracal! 
-				Quadrado[] temp = new Quadrado[quadrados.length + 1];
+				Quadrado[] temp1 = new Quadrado[quadrados.length + 1];
 				for (int i=0; i<quadrados.length; i++) {
-					temp[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
+					temp1[i] = quadrados[i];  //copiando todas referencias de quadrados em temp1
 				}
-				//inserir q em temp
-				temp[quadrados.length] = q;
+				//inserir q em temp1
+				temp1[quadrados.length] = q;
 				//atualizar referencia de quadrados
-				quadrados = temp;
+				quadrados = temp1;
 
 				break;
 
@@ -58,14 +58,14 @@ public class UI {
 				float baseRetangulo = Float.parseFloat(strBaseRetangulo);
 				Retangulo q = new Retangulo(ladoRetangulo, baseRetangulo);
 
-				Retangulo[] temp = new Retangulo[retangulos.length + 1];
+				Retangulo[] temp2 = new Retangulo[retangulos.length + 1];
 				for (int i=0; i<retangulos.length; i++) {
-					temp[i] = retangulos[i];
+					temp2[i] = retangulos[i];
 				}
 			
-				temp[retangulos.length] = q;
+				temp2[retangulos.length] = q;
 				
-				retangulos = temp;
+				retangulos = temp2;
 				break;
 
 			case 3: 
@@ -76,14 +76,14 @@ public class UI {
 				
 				Circulo q = new Circulo(raioCirculo);
 
-				Circulo[] temp = new Circulo[circulos.length + 1];
+				Circulo[] temp3 = new Circulo[circulos.length + 1];
 				for (int i=0; i<circulos.length; i++) {
-					temp[i] = circulos[i];
+					temp3[i] = circulos[i];
 				}
 			
-				temp[circulos.length] = q;
+				temp3[circulos.length] = q;
 				
-				circulos = temp;
+				circulos = temp3;
 				break;
 
 			case 0: 
