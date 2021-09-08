@@ -1,12 +1,17 @@
 package app;
 
-import javax.swing.JOptionPane;
-
+import figurasGeometricas.Circulo;
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
+
+import javax.swing.*;
+import java.util.Vector;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
+	static Vector<Circulo> circulos = new Vector<>();
+	static Vector<Retangulo> retangulos = new Vector<>();
 
 	
 	
@@ -43,12 +48,22 @@ public class UI {
 
 				break;
 
-			case 2: 
-				//criar retangulo
+			case 2:
+				String strBaseRetangulo = JOptionPane.showInputDialog("Informe a base do retangulo:");
+				float base = Float.parseFloat(strBaseRetangulo);
+				String strAlturaRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				float altura = Float.parseFloat(strAlturaRetangulo);
+				Retangulo retangulo = new Retangulo(base, altura);
+
+				retangulos.add(retangulo);
 				break;
 
-			case 3: 
-				//criar circulo
+			case 3:
+				String strRaioCirculo = JOptionPane.showInputDialog("Informe o raio do circulo:");
+				float raio = Float.parseFloat(strRaioCirculo);
+				Circulo circulo = new Circulo(raio);
+
+				circulos.add(circulo);
 				break;
 
 			case 0: 
@@ -71,6 +86,29 @@ public class UI {
 					+ "Perimetro: " + quadrados[i].calcularPerimetro();
 
 			JOptionPane.showMessageDialog(null, resposta);
+		}
+
+		var circuloCounter = 0;
+		for (var circulo : circulos) {
+			String resposta = "Circulo " + circuloCounter + ":\n"
+					+ "Raio: " + circulo.getRaio() + "\n"
+					+ "Area: " + circulo.calcularArea() + "\n"
+					+ "Perimetro: " + circulo.calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+			circuloCounter++;
+		}
+
+		var retanguloCounter = 0;
+		for (var retangulo : retangulos) {
+			String resposta = "Retangulo " + retanguloCounter + ":\n"
+					+ "Base: " + retangulo.getBase() + "\n"
+					+ "Altura: " + retangulo.getAltura() + "\n"
+					+ "Area: " + retangulo.calcularArea() + "\n"
+					+ "Perimetro: " + retangulo.calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+			retanguloCounter++;
 		}
 
 

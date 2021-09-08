@@ -1,6 +1,6 @@
 package figurasGeometricas;
 
-public class Quadrado {
+public class Quadrado implements FiguraBase {
 
 	private float lado;
 
