@@ -2,12 +2,15 @@ package app;
 
 import javax.swing.JOptionPane;
 
+import figurasGeometricas.Circulo;
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Retangulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
-
+	static Circulo[] circulos = new Circulo[0];
+	static Retangulo[] retangulos = new Retangulo[0];
 	
 	
 	public static void main(String[] args) {
@@ -45,10 +48,34 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
+				String strLargRetangulo =  JOptionPane.showInputDialog("Informe a largura do retângulo: ");
+				String strCompRetangulo = JOptionPane.showInputDialog("Informe o comprimento do retângulo: ");
+				float largRet = Float.parseFloat(strLargRetangulo);
+				float compRet = Float.parseFloat(strCompRetangulo);
+				Retangulo ret =  new Retangulo(largRet, compRet);
+
+				Retangulo[] tempr = new Retangulo[retangulos.length + 1];
+				for (int i=0; i<retangulos.length; i++){
+					tempr[i] = retangulos[i];
+				}
+				tempr[retangulos.length] = ret;
+				retangulos = tempr;
+
 				break;
 
 			case 3: 
-				//criar circulo
+				String strRaio = JOptionPane.showInputDialog("Informe o raio do círculo: ");
+				float raio = Float.parseFloat(strRaio);
+				Circulo c = new Circulo(raio);
+
+				Circulo[] temp2 = new Circulo[circulos.length + 1];
+				for(int i=0; i<circulos.length; i++){
+					temp2[i] = circulos[i];
+				}
+
+				temp2[circulos.length] = c;
+				circulos = temp2;
+
 				break;
 
 			case 0: 
@@ -64,11 +91,34 @@ public class UI {
 		//Imprimir todas as areas e perimetros das figuras geometricas criadas
 		//Comecando pelos quadrados
 
+		//Quadrados
 		for (int i=0; i<quadrados.length; i++) {
 			String resposta = "Quadrado " + i + "(" + quadrados[i] + ")" + ":\n"
 					+ "Lado: " + quadrados[i].getLado() + "\n"
 					+ "Area: " + quadrados[i].calcularArea() + "\n"
 					+ "Perimetro: " + quadrados[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+
+		//Circulos
+		for(int i=0; i<circulos.length; i++){
+			String resposta = "Círculo " + i + "(" + circulos[i] + ")" + ":\n"
+					+ "Raio: " + circulos[i].getRaio() + "\n"
+					+ "Area: " + circulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + circulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, String.format(resposta, "%.2f"));
+		}
+
+
+		//Retângulos
+		for(int i=0; i<retangulos.length; i++){
+			String resposta = "Retângulo " + i + "(" + retangulos[i] + ")" + ":\n"
+					+ "Largura: " + retangulos[i].getLarg() + "\n"
+					+ "Comprimento: " + retangulos[i].getComp() + "\n"
+					+ "Área: " + retangulos[i].calcularArea() + "\n"
+					+ "Perímetro: " + retangulos[i].calcularPerimetro();
 
 			JOptionPane.showMessageDialog(null, resposta);
 		}
@@ -79,18 +129,4 @@ public class UI {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*João Pedro Alves Machado - 190015276 / Sidney Fernando Ferreira Lemes - 190037997*/
