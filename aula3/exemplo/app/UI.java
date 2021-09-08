@@ -3,12 +3,13 @@ package app;
 import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
+import figurasGeometricas.Circulo;
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
-
-	
+	static Circulo[] circulos = new Circulo[0];		//referencia representa a associacao MULTIPLA entre UI e Circulo
+	static Retangulo[] retangulos = new Retangulo[0];  //referencia representa a associacao MULTIPLA entre UI e Retangulo
 	
 	public static void main(String[] args) {
 		//Aqui é onde tudo começa! 
@@ -45,17 +46,50 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
+				String strLarguraRetangulo = JOptionPane.showInputDialog("Informe a largura do retangulo:");
+				float larguraRetangulo = Float.parseFloat(strLarguraRetangulo);
+
+				String strAlturaRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				float alturaRetangulo = Float.parseFloat(strAlturaRetangulo);
+
+				Retangulo r = new Retangulo(alturaRetangulo, larguraRetangulo);
+
+				//inserir r dentro do vetor retangulos.
+				//Esforco bracal! 
+				Retangulo[] tempR = new Retangulo[retangulos.length + 1];
+
+				for (int i=0; i<retangulos.length; i++) {
+					tempR[i] = retangulos[i];  //copiando todas referencias de retangulos em tempR
+				}
+				//inserir r em tempR
+				tempR[retangulos.length] = r;
+				//atualizar referencia de retangulos
+				retangulos = tempR;
 				break;
 
 			case 3: 
 				//criar circulo
+				String strRaioCirculo = JOptionPane.showInputDialog("Informe o raio do círculo:");
+				float raioCirculo = Float.parseFloat(strRaioCirculo);
+				Circulo c = new Circulo(raioCirculo);
+
+				//inserir c dentro do vetor circulos.
+				//Esforco bracal! 
+				Circulo[] temp = new Circulo[circulos.length + 1];
+				for (int i=0; i<circulos.length; i++) {
+					temp[i] = circulos[i];  //copiando todas referencias de quadrados em temp
+				}
+				//inserir q em temp
+				temp[circulos.length] = q;
+				//atualizar referencia de quadrados
+				circulos = temp;
 				break;
 
 			case 0: 
 				//sair do programa
 				break;
 
-			default:
+			default: 
 				//Opcao invalida
 				break;
 			}
