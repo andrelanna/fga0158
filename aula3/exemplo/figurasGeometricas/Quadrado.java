@@ -1,4 +1,4 @@
-package figurasGeometricas;
+package FigurasGeometricas;
 
 public class Quadrado {
 
