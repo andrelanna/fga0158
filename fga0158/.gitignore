@@ -1,0 +1,4 @@
+*.swp
+/bin/
+.classpath
+.project
