@@ -36,9 +36,9 @@ public class UI {
 				//Esforco bracal! 
 				Quadrado[] tempQuadrados = new Quadrado[quadrados.length + 1];
 				for (int i=0; i<quadrados.length; i++) {
-					tempQuadrados[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
+					tempQuadrados[i] = quadrados[i];  //copiando todas referencias de quadrados em tempQuadrados
 				}
-				//inserir q em temp
+				//inserir q em tempQuadrados
 				tempQuadrados[quadrados.length] = q;
 				//atualizar referencia de quadrados
 				quadrados = tempQuadrados;
@@ -57,11 +57,11 @@ public class UI {
 				// Esforco bracal!
 				Retangulo[] tempRetangulos = new Retangulo[retangulos.length + 1];
 				for (int i = 0; i < retangulos.length; i++) {
-					tempRetangulos[i] = retangulos[i]; // copiando todas referencias de retangulos em temp
+					tempRetangulos[i] = retangulos[i]; // copiando todas referencias de retangulos em tempRetangulos
 				}
-				// inserir q em temp
+				// inserir r em tempRetangulos
 				tempRetangulos[retangulos.length] = r;
-				// atualizar referencia de quadrados
+				// atualizar referencia de retangulos
 				retangulos = tempRetangulos;
 
 				break;
@@ -72,13 +72,13 @@ public class UI {
 				float raioCirculo = Float.parseFloat(strRaioCirculo);
 				Circulo c = new Circulo(raioCirculo);
 
-				// inserir q dentro do vetor circulos.
+				// inserir c dentro do vetor circulos.
 				// Esforco bracal!
 				Circulo[] tempCirculos = new Circulo[circulos.length + 1];
 				for (int i = 0; i < circulos.length; i++) {
-					tempCirculos[i] = circulos[i]; // copiando todas referencias de circulos em temp
+					tempCirculos[i] = circulos[i]; // copiando todas referencias de circulos em tempCirculos
 				}
-				// inserir q em temp
+				// inserir c em tempCirculos
 				tempCirculos[circulos.length] = c;
 				// atualizar referencia de circulos
 				circulos = tempCirculos;
@@ -106,7 +106,7 @@ public class UI {
 			JOptionPane.showMessageDialog(null, resposta);
 		}
 
-		// Imprimir retangulos
+		//Imprimir retangulos
 		for (int i=0; i<retangulos.length; i++) {
 			String resposta = "Retangulo " + i + "(" + retangulos[i] + ")" + ":\n"
 					+ "Altura: " + retangulos[i].getAltura() + "\n"
@@ -117,7 +117,7 @@ public class UI {
 			JOptionPane.showMessageDialog(null, resposta);
 		}
 
-		// Imprimir circulos
+		//Imprimir circulos
 		for (int i=0; i<circulos.length; i++) {
 			String resposta = "Circulo " + i + "(" + circulos[i] + ")" + ":\n"
 					+ "Lado: " + circulos[i].getRaio() + "\n"
