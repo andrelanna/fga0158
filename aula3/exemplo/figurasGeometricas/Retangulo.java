@@ -22,7 +22,7 @@ public class Retangulo {
 		return lado;
 	}
 
-    public float getAltura() {
+    public float getBase() {
 		return base;
 	}
 }

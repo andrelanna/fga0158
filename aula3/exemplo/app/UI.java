@@ -4,12 +4,16 @@ import javax.swing.JOptionPane;
 
 import figurasGeometricas.Quadrado;
 import figurasGeometricas.Retangulo;
+import figurasGeometricas.Circulo;
+
 
 public class UI {
 	
 	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
 
 	static Retangulo[] retangulos = new Retangulo[0];
+
+	static Circulo[] circulos = new Circulo[0];
 
 	
 	
@@ -48,7 +52,7 @@ public class UI {
 
 			case 2: 
 				//criar retangulo
-				String strLadoRetangulo = JOptionPane.showInputDialog("Informe a altura do retangulo:");
+				String strLadoRetangulo = JOptionPane.showInputDialog("Informe o lado do retangulo:");
 				float ladoRetangulo = Float.parseFloat(strLadoRetangulo);
 				String strBaseRetangulo = JOptionPane.showInputDialog("Informe a base do retangulo:");
 				float baseRetangulo = Float.parseFloat(strBaseRetangulo);
@@ -66,6 +70,20 @@ public class UI {
 
 			case 3: 
 				//criar circulo
+			
+				String strRaioCirculo = JOptionPane.showInputDialog("Informe o raio do circulo:");
+				float raioCirculo = Float.parseFloat(strRaioCirculo);
+				
+				Circulo q = new Circulo(raioCirculo);
+
+				Circulo[] temp = new Circulo[circulos.length + 1];
+				for (int i=0; i<circulos.length; i++) {
+					temp[i] = circulos[i];
+				}
+			
+				temp[circulos.length] = q;
+				
+				circulos = temp;
 				break;
 
 			case 0: 
@@ -91,7 +109,25 @@ public class UI {
 		}
 
 
-			//Fazer com as demais figuras geometricas
+		for (int i=0; i<retangulos.length; i++) {
+			String resposta = "Retangulo " + i + "(" + retangulos[i] + ")" + ":\n"
+					+ "Lado: " + retangulos[i].getLado() + "\n"
+					+ "Base: " + retangulos[i].getBase() + "\n"
+					+ "Area: " + retangulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + retangulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
+
+
+		for (int i=0; i<circulos.length; i++) {
+			String resposta = "Circulo " + i + "(" + circulos[i] + ")" + ":\n"
+					+ "Raio: " + circulos[i].getRaio() + "\n"
+					+ "Area: " + circulos[i].calcularArea() + "\n"
+					+ "Perimetro: " + circulos[i].calcularPerimetro();
+
+			JOptionPane.showMessageDialog(null, resposta);
+		}
 
 	}
 
