@@ -120,7 +120,7 @@ public class UI {
 
 
 			JOptionPane.showMessageDialog(null, resposta);
-		}			//Fazer com as demais figuras geometricas
+		}			
 
 
 		for (int i=0; i<retangulos.length; i++) {
