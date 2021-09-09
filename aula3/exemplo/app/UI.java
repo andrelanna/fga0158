@@ -1,22 +1,23 @@
 package app;
 
+import figurasGeometricas.Triangulo;
 import javax.swing.JOptionPane;
-
-import figurasGeometricas.Quadrado;
+import figurasGeometricas.quadrado;
+import figurasGeometricas.Circulo;
 
 public class UI {
-	
-	static Quadrado[] quadrados = new Quadrado[0];  //referencia representa a associacao MULTIPLA entre UI e Quadrado
-
+	static quadrado[] quadrados = new quadrado[0];  
+	static Triangulo[] Triangulos= new Triangulo[0];
+	static Circulo[] Circulos= new Circulo[0];
 	
 	
 	public static void main(String[] args) {
-		//Aqui √© onde tudo come√ßa! 
+		
 		
 		int opcao;
 		do { 
-			//1a coisa: definir qual figura vai ser criada
-			String strOpcao = JOptionPane.showInputDialog("Escolha uma op√ß√£o de figura geom√©trica: \n"
+			
+			String strOpcao = JOptionPane.showInputDialog("Escolha uma opÁ„o de figura geomÈtrica: \n"
 					+ "1 - Quadrado\n"
 					+ "2 - Retangulo\n"
 					+ "3 - Circulo\n"
@@ -25,45 +26,55 @@ public class UI {
 
 			switch (opcao) {
 			case 1:
-				//criar quadrado
+				
 				String strLadoQuadrado = JOptionPane.showInputDialog("Informe o lado do quadrado:");
 				float ladoQuadrado = Float.parseFloat(strLadoQuadrado);
-				Quadrado q = new Quadrado(ladoQuadrado);
-
-				//inserir q dentro do vetor quadrados.
-				//Esforco bracal! 
-				Quadrado[] temp = new Quadrado[quadrados.length + 1];
+				quadrado q = new quadrado(ladoQuadrado);
+				
+				 
+				quadrado[] temp = new quadrado[quadrados.length + 1];
 				for (int i=0; i<quadrados.length; i++) {
 					temp[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
 				}
-				//inserir q em temp
+				
 				temp[quadrados.length] = q;
-				//atualizar referencia de quadrados
+				
 				quadrados = temp;
 
 				break;
 
 			case 2: 
-				//criar retangulo
+				String strLadoTriangulo =JOptionPane.showInputDialog("Informe o lado do triangulo:");
+				String strAlturaTriangulo = JOptionPane.showInputDialog("Informe a altura do triangulo:");
+				float alturaTriangulo= Float.parseFloat(strAlturaTriangulo);
+				float ladoTriangulo = Float.parseFloat(strLadoTriangulo);
+				Triangulo t = new Triangulo(ladoTriangulo,alturaTriangulo); 
+				
+				Triangulo[]temp1= new Triangulo[Triangulos.length+1];
+				for(int i=0;i<Triangulos.length;i++) {
+					temp1[i]=Triangulos[i];
+				}
+				temp1[Triangulos.length]= t;
+				Triangulos= temp1;
 				break;
 
 			case 3: 
-				//criar circulo
+				String strRaioCirculo =JOptionPane.showInputDialog("Informe o raio do circulo:");
+				float raioCirculo=Float.parseFloat(strRaioCirculo);
+				Circulo c= new Circulo (raioCirculo);
+				
+				Circulo[]temp2=new Circulo[Circulos.length+1];
+				for(int i=0;i<Circulos.length;i++) {
+					temp2[i]=Circulos[i];
+				}
+				temp2[Circulos.length]=c;
+				Circulos= temp2;
+			
 				break;
 
-			case 0: 
-				//sair do programa
-				break;
-
-			default:
-				//Opcao invalida
-				break;
 			}
-		} while (opcao != 0);
-
-		//Imprimir todas as areas e perimetros das figuras geometricas criadas
-		//Comecando pelos quadrados
-
+		}while(opcao!=0);
+		
 		for (int i=0; i<quadrados.length; i++) {
 			String resposta = "Quadrado " + i + "(" + quadrados[i] + ")" + ":\n"
 					+ "Lado: " + quadrados[i].getLado() + "\n"
@@ -72,25 +83,26 @@ public class UI {
 
 			JOptionPane.showMessageDialog(null, resposta);
 		}
-
-
-			//Fazer com as demais figuras geometricas
-
-	}
-
+		
+		for(int i=0;i<Triangulos.length;i++) {
+			String resposta1="Triangulo"+i+"("+Triangulos[i]+")"+":\n"
+					+"Lado:"+Triangulos[i].getLado()+"\n"
+					+"Altura:"+Triangulos[i].getAltura()+"\n"
+					+"Perimetro:"+Triangulos[i].calcularPerimetro()+"\n"
+					+"Area:"+Triangulos[i].calcularArea()+"\n";
+			JOptionPane.showMessageDialog(null, resposta1);
+					
+		}
+		for(int i=0;i<Circulos.length;i++) {
+			String resposta2="Circulo"+i+"("+Circulos[i]+")"+":\n"
+					+"Raio:"+Circulos[i].getRaio()+"\n"
+					+"Perimetro:"+Circulos[i].calcularPerimetro()+"\n"
+					+"Area:"+Circulos[i].calcularArea()+"\n";
+			JOptionPane.showMessageDialog(null, resposta2);
+					
+		
+		}
+		}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		

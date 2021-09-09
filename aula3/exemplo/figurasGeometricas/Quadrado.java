@@ -1,15 +1,17 @@
 package figurasGeometricas;
 
-public class Quadrado {
 
+public class quadrado {
 	private float lado;
 
-	public Quadrado(float ladoQuadrado) {
+	public quadrado(float ladoQuadrado) {
 		this.lado = ladoQuadrado;
+		
 	}
 
 	public float calcularPerimetro() {
 		return 4 * lado; 
+		
 	}
 	
 	public float calcularArea() {
@@ -19,4 +21,5 @@ public class Quadrado {
 	public float getLado() {
 		return lado;
 	}
+
 }
