@@ -2,11 +2,11 @@ package app;
 
 import figurasGeometricas.Triangulo;
 import javax.swing.JOptionPane;
-import figurasGeometricas.quadrado;
+import figurasGeometricas.Quadrado;
 import figurasGeometricas.Circulo;
 
 public class UI {
-	static quadrado[] quadrados = new quadrado[0];  
+	static Quadrado[] Quadrados = new Quadrado[0];  
 	static Triangulo[] Triangulos= new Triangulo[0];
 	static Circulo[] Circulos= new Circulo[0];
 	
@@ -29,17 +29,17 @@ public class UI {
 				
 				String strLadoQuadrado = JOptionPane.showInputDialog("Informe o lado do quadrado:");
 				float ladoQuadrado = Float.parseFloat(strLadoQuadrado);
-				quadrado q = new quadrado(ladoQuadrado);
+				Quadrado q = new Quadrado(ladoQuadrado);
 				
 				 
-				quadrado[] temp = new quadrado[quadrados.length + 1];
-				for (int i=0; i<quadrados.length; i++) {
-					temp[i] = quadrados[i];  //copiando todas referencias de quadrados em temp
+				Quadrado[] temp = new Quadrado[Quadrados.length + 1];
+				for (int i=0; i<Quadrados.length; i++) {
+					temp[i] = Quadrados[i];  //copiando todas referencias de quadrados em temp
 				}
 				
-				temp[quadrados.length] = q;
+				temp[Quadrados.length] = q;
 				
-				quadrados = temp;
+				Quadrados = temp;
 
 				break;
 
@@ -75,11 +75,11 @@ public class UI {
 			}
 		}while(opcao!=0);
 		
-		for (int i=0; i<quadrados.length; i++) {
-			String resposta = "Quadrado " + i + "(" + quadrados[i] + ")" + ":\n"
-					+ "Lado: " + quadrados[i].getLado() + "\n"
-					+ "Area: " + quadrados[i].calcularArea() + "\n"
-					+ "Perimetro: " + quadrados[i].calcularPerimetro();
+		for (int i=0; i<Quadrados.length; i++) {
+			String resposta = "Quadrado " + i + "(" + Quadrados[i] + ")" + ":\n"
+					+ "Lado: " + Quadrados[i].getLado() + "\n"
+					+ "Area: " + Quadrados[i].calcularArea() + "\n"
+					+ "Perimetro: " + Quadrados[i].calcularPerimetro();
 
 			JOptionPane.showMessageDialog(null, resposta);
 		}

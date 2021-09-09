@@ -1,10 +1,10 @@
 package figurasGeometricas;
 
 
-public class quadrado {
+public class Quadrado {
 	private float lado;
 
-	public quadrado(float ladoQuadrado) {
+	public Quadrado(float ladoQuadrado) {
 		this.lado = ladoQuadrado;
 		
 	}
