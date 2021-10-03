@@ -3,7 +3,6 @@ package figurasGeometricas;
 public class Circulo {
 
     public static final double PI = 3.1415;
-
     private float raio;
 
     public Circulo(float raio){

@@ -1,22 +1,14 @@
 package figurasGeometricas;
 
-public class Quadrado {
+public class Quadrado extends FigurasGeometricas {
 
-	private float lado;
-
-	public Quadrado(float ladoQuadrado) {
-		this.lado = ladoQuadrado;
-	}
-
-	public float calcularPerimetro() {
-		return 4 * lado; 
+	public Quadrado(float lado,int qteLado) {
+		this.lado = lado;
+		this.qteLado = qteLado;
 	}
 	
 	public float calcularArea() {
 		return lado * lado; 
 	}
 
-	public float getLado() {
-		return lado;
-	}
 }
