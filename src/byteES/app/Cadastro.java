@@ -1,7 +1,9 @@
 package byteES.app;
 
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -35,23 +37,21 @@ public class Cadastro {
 	
 	
 	public void gravarAlunos() {
-		FileOutputStream out = null;  //objeto que "lida" com o arquivo de saida
+		BufferedWriter buffer = null;
+		FileWriter out = null;
 		
 		try {
-			out = new FileOutputStream(nomeArquivo);  //tentar criar objeto de manipulacao de arquivo
+			out = new FileWriter(nomeArquivo);
+			buffer = new BufferedWriter(out);
 			
-			Iterator<Aluno> it = alunos.iterator();  //Iterador sobre os objetos do tipo Aluno na lista alunos
-			while (it.hasNext()) {  //enquanto houver alunos a serem percorridos
-				Aluno a = it.next();   //obtem o proximo objeto Aluno
-				String a_str = a.toString();  //transforma os dados do objeto em uma string 
-				for (int i=0; i<a_str.length(); i++) {  //para essa string, transforma cada caractere em um byte e o escreve no arquivo
-					byte b = (byte) a_str.charAt(i);
-					out.write(b);
-				}
-				out.write((byte)'\n');  //ao final da escrita de um objeto aluno, pula uma linha no arquivo
+			for (Aluno a : alunos) {
+				buffer.write(a.toString());
+				buffer.write('\n');
 			}
+			
+			buffer.close();
 		} catch (IOException e) {
-			e.printStackTrace();
+			// TODO: handle exception
 		}
 	}
 	
