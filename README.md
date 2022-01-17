@@ -1,24 +1,45 @@
 UnB - Universidade de Brasilia  
 FGA - Faculdade do Gama  
-
 # FGA0158 - Orientação por Objetos
 
-1. **Conteúdo da disciplina**  
-    1.1 Paradigma de orientação por objetos  
-    1.2 Linguagens e IDEs  
-    
-2. **Formas de avaliação**  
-	2.1 Trabalho prático dividido em três entregas  
-	    Será considerado para efeitos de cálculo de menção. 
-	2.2 Exercícios ao final de cada aula  
-	    Não será considerado para efeitos de cálculo de menção.
-	2.3 Desafios de programação, utilizando OO na resolução  
-	    Será considerado **apenas** para "arredondamento" de menção. Somente serão feitos arredondamentos para os alunos que tiverem feito todos os desafios e que as soluções estejam corretas. 
->>>>>>> organizacaoDisciplina
-	
-3. **Lista de presença**
 
-4. **Plano de aulas**
+Programa da disciplina
 
-5. **Bibliografia**
+**Aula**  | Conteúdo 
+---------:|:----------
+1         | [Apresentação da disciplina](aula1/)
+2         |
+3         |
+4         |
+5         |
+6         |
+7         |
+8         |
+9         |
+10        |
+11        |
+12        |
+13        |
+14        |
+15        |
+16        |
+17        |
+18        |
+19        |
+20        |
+21        |
+22        |
+23        |
+24        |
+25        |
+26        |
+27        |
+28        |
+29        |
+30        |
+31        |
+32        |
+33        |
+34        |
+
 
