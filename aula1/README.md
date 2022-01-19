@@ -12,6 +12,6 @@ FGA0158 - Orientação por Objetos
 - Atividades avaliativas
 - Lista de frequencia
 - Ambiente de desenvolvimento
-- Ambuente de disciplina (GitHub)
+- Ambiente de disciplina (GitHub)
 
 
