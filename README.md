@@ -36,10 +36,10 @@ Programa da disciplina
 27        | [link](aula27/)
 28        | [link](aula28/)
 29        | [link](aula29/)
-30        | [link](aula30/)
-31        | [link](aula31/)
-32        | [link](aula32/)
-33        | [link](aula33/)
-34        | [link](aula34/)
+30        | [Revisão / lançamento de menções](aula30/)
+31        | [Aula extra - Introdução a Git ](aula31/)
+32        | [Aula extra](aula32/)
+33        | [Aula extra](aula33/)
+34        | [Aula extra](aula34/)
 
 
