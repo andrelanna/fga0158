@@ -5,7 +5,9 @@ FGA - Faculdade do Gama
 
 Programa da disciplina
 
-**Aula**  | Conteúdo 
+:warning: Playlist dos vídeos gravados nas aulas no YouTube: [link](https://youtube.com/playlist?list=PLrzhWxX1YYM9znXBp_YhiyiXIdXadLeka)
+
+**Aula**  | **Conteúdo**
 ---------:|:----------
 1         | [Apresentação da disciplina](aula1/)
 2         | [Revisão de programação - parte 1](aula2/)
