@@ -19,7 +19,7 @@ FGA0158 - Orientação por Objetos
 * [Slides](https://docs.google.com/presentation/d/1ZhtIBWDGenllvyEzGp7X5Do0KcAWq_a4wBPIZfKuMqs/edit?usp=sharing)
 
 **Vídeos da aula**  
-* [Vídeo 1 - Conceitos](https://youtu.be/B_IRKuzUM9o)
+* [Vídeo 1 - Conceitos](https://youtu.be/2hqNMacT1T0)
 * [Vídeo 2 - Prática, parte 1 ](https://youtu.be/P9cK67OY3os)
 * [Vídeo 3 - Prática, parte 2 ](https://youtu.be/GWNt7BQDChE)
 
