@@ -14,9 +14,9 @@ FGA0158 - Orientação por Objetos
 - Comunicação entre objetos: troca de mensagens
 
 
-**Slides da aula**
+**Slides da aula**  
 
-
+- [Slides](https://docs.google.com/presentation/d/1rbcLtza79uKjhLKr0O3j3TOspWm5aaVBk2J47wL0xp8/edit?usp=sharing)
 
 
 **Exercícios de fixação**
