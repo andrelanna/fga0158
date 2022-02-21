@@ -45,3 +45,13 @@ Programa da disciplina
 34        | [Aula extra](aula34/)
 
 
+---
+
+#### Trabalho prático
+
+O trabalho prático da disciplina será desenvolvido em três partes. O enunciado
+de cada uma das partes está descrito nos links apresentados em seguida: 
+
+* [entrega 1](/trabalhoPratico/entrega1)  
+* [entrega 2](/trabalhoPratico/entrega2)  
+* [entrega 3](/trabalhoPratico/entrega3)  
