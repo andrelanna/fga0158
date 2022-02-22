@@ -152,13 +152,69 @@ O relatório consolidado de reservas possui a seguinte estrutura:
 
 #### Enunciado
 
-:construction::construction::construction: Em construção :construction::construction::construction:
+A entrega 1 desse trabalho está focada no desenvolvimento de artefatos que
+exercitem o raciocínio dos alunos em termos de classes, objetos e suas relações,
+através da criação de dois diagramas UML. Há ainda uma parte do trabalho voltada
+para a implementação de código em linguagem Java, contudo, essa parte representa
+uma menor porção dos objetos que serão avaliados nessa entrega. 
 
-Para a entrega 1 desse trabalho prático: 
+Para a primeira entrega serão avaliados os seguintes itens: 
 
-* Diagrama UML de classes capaz de representar esse cenário;
-* Diagrama UML de objetos representando: 
-* Menu principal do programa prototipando as seguintes funções: 
+* Diagrama UML de classes capaz de representar o cenário descrito acima. A
+  distribuição dos atributos e métodos pelas classes além das associações entre
+classes deverão ser realizadas de modo coerente com as características e
+comportamentos das entidades descritas. As associações entre classes deverão
+permitir a execução das funcionalidades através das comunicações entre os
+objetos. 
+
+* Diagramas UML de objetos representando as associações descritas a seguir:   
+  a) Uma pessoa fisica de nome Isabela Freitas, email freitas@gmail.com,
+residente na rua 6 sul, lote 10, apto 1002, Aguas Claras, Brasilia, DF;
+realizando a locação de um veiculo Volkswagen Gol, ano 2017/2018, branco; pelo
+período compreendido entre 20/02/2022 - 12:00hs a 22/02/2002 - 12:00hs, com o
+valor total de diárias de R$200,00, seguro obrigatório no valor de R$24,00, sem
+proteção própria, e impostos no valor de R$16,00. Total da reserva: R$250,00.
+
+   b) Uma empresa chamada Clube Atlético Mineiro :chicken:, sediada na Avenida
+Olegário Maciel, 1516, Bairro Lourdes, Belo Horizonte, MG, CNPJ
+00.013.013/0001-13, tem como funcionários cadastrados:  i) Ignacio Fernandez,
+email nacho@atletico.com.br, endereco Rua Cantagalo, 13, Bairro Aparecida, Belo
+Horizonte, MG e ii) Givanildo Vieira de Sousa (o incrível Hulk), email
+oincrivelhulk@atletico.com.br, endereço Arena MRV, rua Cristina ~~Maria~~
+de Assis, 202, Bairro Califórnia, Belo Horizonte, MG. 
+
+* Menu principal do programa prototipando as funcionalidades descritas em
+  seguida. Cada nível da relação de funcionalidades apresentada abaixo é um menu
+de opções que deve ser chamado ao escolher o item no nível imediatamente
+anterior, em seu respectivo menu. 
+
+  ```
+  Menu Principal
+  A) Gerenciar Locatários
+     Menu Gerência de Locatários:
+     A) Cadastrar Locatário
+     B) Buscar Locatário
+     C) Pesquisar Locatário
+     D) Excluir locatário
+
+  B) Gerenciar Frota
+     Menu Gerência de Frotas:
+     A) Cadastrar veículos
+        Menu de Cadastro de Veículos: 
+        A) Cadastrar veiculo de passeio
+        B) Cadastrar veículo utilitário
+        C) Cadastrar Motocicleta
+     B) Pesquisar Veículo
+        Menu de Pesquisa de Veículos: 
+        A) Pesquisar veículo pelo Renavam
+        B) Pesquisar veículo por marca, modelo ou renavam
+     C) Atualizar dados de um veículo
+     D) Remover veículo da frota
+
+  C) Gerenciar Reservas
+  D) Sair do Programa
+  
+
 * Implementação alto-nível do diagrama de classes UML.
 
 #### Grupos de alunos
