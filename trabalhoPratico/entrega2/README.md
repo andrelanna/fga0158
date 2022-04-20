@@ -103,4 +103,4 @@ Mesmos grupos da entrega 1.
 
 #### Data de entrega
 
-27 de abril de 2022, 23:59:59hs, via repositório GitHub.
+~~27 de abril~~ 2 de maio de 2022, 23:59:59hs, via repositório GitHub.
