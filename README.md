@@ -54,4 +54,4 @@ de cada uma das partes está descrito nos links apresentados em seguida:
 
 * [entrega 1](/trabalhoPratico/entrega1)  
 * [entrega 2](/trabalhoPratico/entrega2)  
-~~[entrega 3](/trabalhoPratico/entrega3)~~
+* [entrega 3](/trabalhoPratico/entrega3)
