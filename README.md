@@ -9,49 +9,57 @@ Programa da disciplina
 
 **Aula**  | **Data** | **Conteúdo**
 ---------:|:--------:|:----------
-1         | 06/06/22 | [Apresentação da disciplina](aula1/)
-2         | 08/06/22 | [Revisão de programação - parte 1](aula2/)
-3         | 13/06/22 | [Revisão de programação - parte 2](aula3/)
-4         | 15/06/22 | [Exercícios de revisão de programação básica](aula4/)
-5         | 20/06/22 | [Introdução a Orientação por Objetos - parte 1](aula5/)
-6         | 22/06/22 | [Introdução a Orientação por Objetos - parte 2](aula6/)
-7         | 27/06/22 | [Modularidade / encapsulamento](aula7/)
-8         | 29/06/22 | [Exercicios de revisão de introdução a OO e encapsulamento](aula8/)
-9         | 04/07/22 | [Herança](aula9/)
-10        | 06/07/22 | [Polimorfismo - parte 1](aula10/)
-11        | 11/07/22 | [Polimorfismo - parte 2](aula11/)
-12        | 13/07/22 | [Exercícios de revisão de herança e polimorfismo](aula12/)
-13        | 18/07/22 | [Exceções - parte 1](aula13/)
-14        | 20/07/22 | [Exceções - parte 2](aula14/)
-15        | 25/07/22 | [Threads](aula15/)
-16        | 27/07/22 | [Exercícios de revisão de Exceções e Threads](aula16/)
-17        | 01/08/22 | [link](aula17/)
-18        | 03/08/22 | [link](aula18/)
-19        | 08/08/22 | [link](aula19/)
-20        | 10/08/22 | [link](aula20/)
-21        | 15/08/22 | [link](aula21/)
-22        | 17/08/22 | [link](aula22/)
-23        | 22/08/22 | [link](aula23/)
-24        | 24/08/22 | [link](aula24/)
-25        | 29/08/22 | [link](aula25/)
-26        | 31/08/22 | [link](aula26/)
-27        | 05/09/22 | [link](aula27/)
-28        | 07/09/22 | [link](aula28/)
-29        | 12/09/22 | [link](aula29/)
-30        | 14/09/22 | [Revisão / lançamento de menções](aula30/)
-31        | 19/09/22 | [Aula extra - Introdução a Git ](aula31/)
-32        | 21/09/22 | [Aula extra](aula32/)
-33        | 26/09/22 | [Aula extra](aula33/)
-34        | 28/09/22 | [Aula extra](aula34/)
-
-
+1         | 26/10/22 | [Apresentação da disciplina](aula1/)
+2         | 31/10/22 | [Revisão de programação - parte 1](aula2/)
+~~3~~     | 02/11/22 | Feriado - Finados 
+3         | 07/11/22 | [Revisão de programação - parte 2](aula3/)
+4         | 09/11/22 | [Exercícios de revisão de programação básica](aula4/)
+5         | 14/11/22 | Avaliação 1 
+6         | 16/11/22 | [Introdução a Orientação por Objetos - parte 1](aula6/) 
+7         | 21/11/22 | [Introdução a Orientação por Objetos - parte 2](aula7/)
+8         | 23/11/22 | [Modularidade / encapsulamento](aula8/)
+9         | 28/11/22 | [Exercicios de revisão de introdução a OO e encapsulamento](aula9/)
+10        | 30/11/22 | [Herança](aula10/)
+11        | 05/12/22 | [Polimorfismo - parte 1](aula11/)
+12        | 07/12/22 | [Polimorfismo - parte 2](aula12/)
+13        | 12/12/22 | [Exercícios de revisão de herança e polimorfismo](aula13/)
+14        | 14/12/22 | Avaliação 2 
+15        | 19/12/22 | [Exceções - parte 1](aula15/)                  
+16        | 21/12/22 | [Exceções - parte 2](aula16/)
+17        | 02/01/22 | [Threads](aula17/)
+18        | 04/01/22 | [Exercícios de revisão de Exceções e Threads](aula18/)
+19        | 09/01/22 | [link](aula19/)
+20        | 11/01/22 | [link](aula20/)
+21        | 16/01/22 | [link](aula21/)
+22        | 18/01/22 | [link](aula22/)
+23        | 23/01/22 | [link](aula23/)
+24        | 25/01/22 | [link](aula24/)
+25        | 30/01/22 | [link](aula25/)
+26        | 01/02/22 | [link](aula26/)
+27        | 06/02/22 | [link](aula27/)
+28        | 08/02/22 | [link](aula28/)
+29        | 13/02/22 | [link](aula29/)
+30        | 15/02/22 | [link](aula30/)
+31        | 20/02/22 | [link](aula31/)
+32        | 22/02/22 | [Revisão / lançamento de menções](aula32/)
+33        | 27/02/22 | [Aula extra - Introdução a Git ](aula33/)
+<!--34        | xx/xx/22 | [Aula extra](aula34/)-->
 ---
 
-#### Trabalho prático
 
-O trabalho prático da disciplina será desenvolvido em três partes. O enunciado
-de cada uma das partes está descrito nos links apresentados em seguida: 
+#### Metodologia
 
-* [entrega 1](/trabalhoPratico/entrega1)  
-* [entrega 2](/trabalhoPratico/entrega2)  
-* [entrega 3](/trabalhoPratico/entrega3)
+* Aulas expositivas
+* Aplicação de exercícios de fixação
+
+#### Avaliação de aprendizado 
+
+O conteúdo da disciplina será avaliado através de 2 avaliações e 1 trabalho
+prático, com pontuação distribuída da seguinte maneira: 
+
+* Avaliação 1: 20 pontos
+* Avaliação 2: 40 pontos
+* Trabalho prático: 40 pontos
+
+#### Horário de atendimento
+Segundas e quartas, de 13:00 às 14:00hs e 18:00 às 19:00hs.
