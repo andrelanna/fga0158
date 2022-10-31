@@ -4,16 +4,10 @@ FGA0158 - Orientação por Objetos
 
 ---
 
-## Aula X - Nome da aula
-
-**Tópicos da aula**
-- Topico 1
-- Topico 2
+## Aula 30 - Revisão / Lançamento de menções
 
 
-**Slides da aula**
+**Planilha de notas e Frequencias**
 
-* [Slides](link_para_os_slides)
+* [Planilha]() - Indisponível no momento
 
-
-**Exercícios de fixação**

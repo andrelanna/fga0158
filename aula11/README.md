@@ -4,11 +4,15 @@ FGA0158 - Orientação por Objetos
 
 ---
 
-## Aula 11 - Polimorfismo
+## Aula 10 - Polimorfismo
 
 **Tópicos da aula**
-- Paramétrico
-- Interfaces e polimorfismo
+- Tipagem
+- Tipos de polimorfismo
+- Sobrecarga de método
+- Sobrescrita de método
+- Inclusão
+- Coerção
 
 **Slides da aula**
 

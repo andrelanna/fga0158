@@ -4,7 +4,7 @@ FGA0158 - Orientação por Objetos
 
 ---
 
-## Aula 31 - Introdução ao Git
+## Aula X - Nome da aula
 
 **Tópicos da aula**
 - Topico 1
@@ -13,7 +13,7 @@ FGA0158 - Orientação por Objetos
 
 **Slides da aula**
 
-* [Slides]() - Indisponível no momento.
+* [Slides](link_para_os_slides)
 
 
 **Exercícios de fixação**
