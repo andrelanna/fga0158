@@ -45,7 +45,30 @@ métodos ```get```e ```set``` para todos os seus atributos.
 
 9. Explique com suas palavras o diagrama de classes, apresentando o papel de
    cada classe em termos de seus elementos e, principalmente, de suas
-associações com outras classes. 
+associações com outras classes.  
+   **Resposta:**
+   - O projeto está divido em quatro pacotes, a citar: Comum, RH, Acadêmico e
+     APP. 
+   - A classe ```PessoaFisica``` contém os elementos comuns a toda pessoa
+     fisica, que são herdados pelas classes ```TecnicoAdministrativo```,
+```Professor``` e ```Aluno```. Cada uma dessas classes _**é um tipo de**_
+```PessoaFisica``` ao extender os elementos definidos na superclasse. 
+   - Em se tratando de associações presentes no diagrama tem-se: 
+       - Uma ```Universidade``` possui vários objetos ```Curso``` associados
+         através da referência privada ```curso```.
+       - Um ```Curso``` possui vários objetos ```Disciplina``` associados
+	 através da referência privada ```disciplinas```, um objeto
+```Professor``` associado através da referência privada ```coordenador``` que
+desempenha o papel de coordenador do curso e, por fim, possui ainda várias
+objetos ```Turma``` associados através da referência privada ```turmas```
+representando as turmas que fazem parte daquele curso.
+       - Cada ```Disciplina``` tem um objeto ```Turma``` associado através da
+         referência ```t``` de visibilidade de pacote.
+       - Cada ```Turma``` tem associados vários objetos de ```Aluno```
+         associados através da referência privada ```aluno```.
+       - Um ```Professor``` está associado a várias turmas através do atributo
+         privado ```turmas```.
+
 
 10. Para cada um dos elementos abaixo, apresente e justifique os elementos que
     ele consegue acessar diretamente de todas as outras classes, assumindo-se
@@ -68,6 +91,29 @@ Curso.criarTurma() e Curso.criarDisciplina().
 - Método m2, definido em Curso --> Curso.m2()
 - Método m3, definido em TecnicoAdministrativo --> TecnicoAdministrativo.m3()
 - Método m4, definido em PessoaFisica --> PessoaFisica.m4()
+
+Respostas: 
+
+- Principal.main() consegue acessar:
+  - ```Universidade.nome``` e ```Universidade.cadastrarCurso```, através da
+    própria classe ```Universidade```
+  - Métodos ```Aluno.get/set...``` através de algum objeto ```Aluno```
+    referenciado em ```main```
+  - Métodos ```criarTurma``` e ```criarDisciplina```através de algum objeto
+    ```Curso``` referenciado em ```main```
+  - Método ```matricularAluno``` através de algum objeto ```Turma```
+    referenciado em ```main```
+  - método ```criarturma``` através de algum objeto ```disciplina```
+    referenciado em ```main```
+
+- Curso.m2() consegue acessar: 
+  - todos os elementos (atributos e métodos) da própria classe ```Curso```
+  - ```Aluno.matricula```, ```Aluno.curso```, ```Aluno.email```, ```Aluno.nome```, ```Aluno.cpf```, ```Aluno.get/set...()``` incluindo os métodos herdados de ```PessoaFisica```.
+  - ```Turma.matricularAluno()```
+  - ```Disciplina.criarTurma()```
+  - ```TecnicoAdministrativo.criarTurma()```
+  - ```Professor.criarTurma()```
+  
 
 11. Analise cada uma das instruções abaixo como correta ou incorreta,
     justificando o erro nos casos em que julgar incorreta. 
@@ -122,6 +168,66 @@ Curso.criarTurma() e Curso.criarDisciplina().
         turmas[1] = t; 
         turmas[1].codigo = "A";
         turmas[1].cargaHoraria = 30; 
+        ...
+    }
+    ```
+
+Respostas: 
+
+    a) Na classe Principal: 
+    ```
+    public static void main(String args) {
+
+        Universidade.nome = "Universidade de Brasilia"; --> correto
+
+        Curso c = new Curso();                          --> correto
+        c.cargaHoraria = 3000;                          --> errado, atributo privado
+
+        Universidade u = new Universidade();            --> correto, mas não faz
+                                                            sentido pois a classe 
+                                                            Universidade só tem 
+                                                            elementos estáticos
+        u.cadastrarCurso(c);                            --> errado,
+                                                            cadastrarCurso é estático.
+
+        Disciplina d = new Disciplina();                --> correto
+        c.criarDisciplina(d);                           --> correto
+    }
+    ```
+
+    b) Na classe Aluno, o método construtor: 
+    ```
+    Aluno(String n, String c, String i, String m, String cr, String e) {
+        nome = n;        --> correto
+        cpf = c;         --> correto
+        identidade = i;  --> errado
+        matricula = m;   --> correto
+        curso = cr;      --> correto
+        email = e;       --> correto
+    }
+    ```
+
+    c) Na classe Turma, o método matricularAluno: 
+    ```
+    public boolean matricularAluno(Aluno a) {
+        ...
+        a.matricula = 13;                 --> correto
+        a.email = "aluno@aluno.br";       --> correto
+        a.nome = "Andre";                 --> correto
+        a.setCPF("000.000.000-00");       --> correto
+        a.setIdentidade("DF-00.000.000"); --> correto
+    }
+    ```
+
+    d) Na classe Curso, o método criarTurma: 
+    ```
+    public boolean criarTurma(Turma t) {
+        cargaHoraria = 3200;          --> correto
+        codigo = "FGA-0158";          --> errado, codigo não é atributo de turma
+        ...
+        turmas[1] = t;                --> correto
+        turmas[1].codigo = "A";       --> errado
+        turmas[1].cargaHoraria = 30;  --> errado
         ...
     }
     ```
@@ -207,4 +313,29 @@ public class Principal {
 		
 	}
 }
+```
+
+
+Resposta: 
+
+```
+--> Construtor padrão Calculadora
+--> Construtor padrão de Operando
+--> Construtor padrão de Operando
+0.0
+0.0
+0.0
+-----
+2.0
+2.0
+6.28
+-----
+3.0
+-3.0
+0.0
+-----
+5.0
+-1.0
+6.28
+-----
 ```
