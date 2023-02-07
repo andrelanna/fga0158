@@ -20,6 +20,7 @@ public abstract class Progressao {
 				System.out.println("Lancei excecao3 em Progressao.Progressao()");
 				throw new Excecao3();
 			}
+			termos = new int[n];
 		} catch (Excecao3 e) {
 			System.out.println("Capturei excecao3 em Progressao.Progressao()");
 			n = 10; 

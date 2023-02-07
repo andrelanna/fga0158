@@ -12,8 +12,9 @@ public class Aritmetica extends Progressao{
 	}
 
 	public void computarProgressao() {
-		for (int i=0; i<n; i++) {
-			termos[i] = a0 + (n-1)*r;
+		termos[0] = a0;
+		for (int i=1; i<n; i++) {
+			termos[i] = a0 + (i)*r;
 		}
 	}
 
@@ -22,3 +23,13 @@ public class Aritmetica extends Progressao{
 		return resposta;
 	}
 }
+
+
+
+
+
+
+
+
+
+

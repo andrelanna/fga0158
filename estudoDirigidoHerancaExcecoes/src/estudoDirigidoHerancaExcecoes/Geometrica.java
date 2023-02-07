@@ -4,6 +4,7 @@ import exceptions.Excecao1;
 import exceptions.Excecao2;
 
 public class Geometrica extends Progressao{
+	
 	public Geometrica(int a0, int r, int n) throws Excecao1 {
 		super(a0, r, n);
 		if (r == 0) {
@@ -15,8 +16,9 @@ public class Geometrica extends Progressao{
 	}
 
 	public void computarProgressao() {
-		for (int i=0; i<n; i++) {
-			termos[i] = a0 * (n-1)*r;
+		termos[0] = a0;
+		for (int i=1; i<n; i++) {
+			termos[i] = a0 * termos[i-1]*r;
 		}
 	}
 	
