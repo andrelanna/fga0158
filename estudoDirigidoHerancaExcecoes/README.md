@@ -47,25 +47,25 @@ executável. Se houver erros que o impeça de ser executado, informe qual é o e
    System.out.println(p4.imprimirProgressao();
    ```
 
-10. ```
+1. ```
    Geometrica p5 = new Aritmetica(2, 2, 4);
    p5.computarProgressao();
    System.out.println(p5.imprimirProgressao();
    ```
 
-11. ```
+1. ```
    Progressao p6 = new Aritmetica(1, 0, 12); 
    p6.computarProgressao();
    System.out.println(p6.imprimirProgressao();
    ```
 
-12. ```
+1. ```
    Progressao p7 = new Geometrica(1, -2, 15);
    p7.computarProgressao();
    System.out.println(p7.imprimirProgressao();
    ```
 
-13. ```
+1. ```
    Progressao p8 = new Geometrica(1, 0, 15);
    p8.computarProgressao();
    System.out.println(p8.imprimirProgressao();
