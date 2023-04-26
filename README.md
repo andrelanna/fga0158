@@ -45,6 +45,9 @@ Programa da disciplina
 34        | 24/07/23 | [Aula extra - A definir](aula34/)
 
 
+#### Atividades extra-classe
+* [Atividade extra-classe em substituição à aula no. 8](ativExtra1/)
+
 #### Metodologia
 
 * Aulas expositivas
