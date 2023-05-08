@@ -62,5 +62,23 @@ prático, com pontuação distribuída da seguinte maneira:
 * Avaliação 2: 40 pontos
 * Trabalho prático: 40 pontos
 
+#### Trabalho Prático
+
+O trabalho prático deverá ser realizado em grupos de 4 ou 5 alunos. O grupo
+deverá realizar as três entregas do trabalho, não serão permitidas trocas de
+membros entre grupos à partir da primeira entrega. O trabalho deverá ser
+realizado em JAVA e na ferramenta de desenho UML [draw.io.](https://app.diagrams.net/)
+
+Enunciados / datas de entrega: 
+
+| Enunciado| Data de entrega|
+|----------|:-----------|  
+| 1a parte | 22/05/2023 |  
+| 2a parte | 12/06/2023 |  
+| 3a parte | 10/07/2023 |  
+
+
+
+
 #### Horário de atendimento
 Segundas e quartas, de 13:00 às 14:00hs e 18:00 às 19:00hs.

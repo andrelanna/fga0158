@@ -69,4 +69,4 @@ Mesmos grupos da entrega 1.
 
 #### Data de entrega
 
-05 de setembro de 2022, 23:59hs, via repositório do grupo no Github.
+12 de junho de 2023, 23:59hs, via repositório do grupo no Github.

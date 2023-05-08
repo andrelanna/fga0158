@@ -171,19 +171,19 @@ R$70,00 de diária noturna.
 
 #### Grupos de alunos
 
-Grupo de até 4 alunos. 
+Grupo de 4 ou 5 alunos. 
 
 Cada grupo deverá criar seu repositório no GitHub e informar ao professor o
 endereço do repositório. 
 
 #### Data de entrega
 
-27 de julho de 2022, 23:59hs. 
+22 de maio de 2023, 23:59hs. 
 
 #### Critérios de correção:
 
-O trabalho vale 30% da nota do semestre. Esse valor será atribuído conforme os
-seguintes critérios: 
+Essa entrega vale 30% da nota do trabalho, portanto, 12 pontos na nota do
+semestre. Esse valor será atribuído conforme os seguintes critérios: 
 
 - O diagrama de classes deve contemplar todo o cenário descrito acima. As
   classes apresentadas devem permitir a criação e associação de objetos para
