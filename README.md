@@ -28,14 +28,14 @@ Programa da disciplina
 17        | 24/05/23 | [Threads](aula17/)
 18        | 29/05/23 | [Exercícios de revisão de Exceções e Threads](aula18/)
 19        | 31/05/23 | [link](aula19/)
-20        | 05/06/23 | [link](aula20/)
-21        | 07/06/23 | [link](aula21/)
-22        | 12/06/23 | [link](aula22/)
-23        | 14/06/23 | [link](aula23/)
-24        | 19/06/23 | [link](aula24/)
-25        | 21/06/23 | [link](aula25/)
-26        | 26/06/23 | [link](aula26/)
-27        | 28/06/23 | [link](aula27/)
+20        | 05/06/23 | Licença-médica - atividade extra-classe  
+21        | 07/06/23 | Licença-médica - atividade extra-classe  
+22        | 12/06/23 | Licença-médica - atividade extra-classe  
+23        | 14/06/23 | Licença-médica - atividade extra-classe  
+24        | 19/06/23 | [Interfaces gráficas, orientação a eventos](aula24/)
+25        | 21/06/23 | [Interfaces gráficas, orientação a eventos](aula25/)
+26        | 26/06/23 | [Interfaces gráficas, orientação a eventos](aula26/)
+27        | 28/06/23 | [Interfaces gráficas, orientação a eventos](aula27/)
 28        | 03/07/23 | [link](aula28/)
 29        | 05/07/23 | [link](aula29/)
 30        | 10/07/23 | [link](aula30/)
@@ -47,6 +47,7 @@ Programa da disciplina
 
 #### Atividades extra-classe
 * [Atividade extra-classe em substituição à aula no. 8](ativExtra1/)
+* [Atividade extra-classe em substituição às aulas 20-23]()
 
 #### Metodologia
 
@@ -74,9 +75,10 @@ Enunciados / datas de entrega:
 | Enunciado| Data de entrega|
 |----------|:-----------|  
 | 1a parte | 22/05/2023 |  
-| 2a parte | 12/06/2023 |  
-| 3a parte | 10/07/2023 |  
+| 2a parte | ~~12/06/2023~~ 05/07/2023 | 
+| 3a parte | ~~10/07/2023~~ 12/07/2023 |  
 
+\* Datas alteradas em decorrência da licença médica.
 
 
 
