@@ -1,0 +1,417 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2021.1.26)  18 DEC 2023 16:45
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**avaliacaoOO.tex
+(./avaliacaoOO.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/examdesign/examdesign.cls
+File: examdesign.dtx 
+
+Document Class: examdesign 
+\c@passes=\count80
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+\c@tracingmulticols=\count89
+\mult@box=\box27
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count90
+\c@collectmore=\count91
+\doublecol@number=\count92
+\multicoltolerance=\count93
+\multicolpretolerance=\count94
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box28
+\last@line=\box29
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box30
+\mult@grightbox=\box31
+\mult@gfirstbox=\box32
+\mult@firstbox=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\c@columnbadness=\count95
+\c@finalcolumnbadness=\count96
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box51
+\colbreak@box=\box52
+\mc@col@check@num=\count97
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\randomi=\count98
+\ranval=\count99
+\UL@box=\box53
+\UL@hyphenbox=\box54
+\UL@skip=\skip45
+\UL@pe=\count100
+\UL@pixel=\dimen112
+\ULC@box=\box55
+\ULdepth=\dimen113
+\c@questionnumber=\count101
+\c@extract=\count102
+\c@question=\count103
+\c@length=\count104
+\c@temp=\count105
+\c@wordtemp=\count106
+\c@form=\count107
+\c@version=\count108
+\c@current@section=\count109
+\c@current@question=\count110
+\c@innerloop=\count111
+\c@sect=\count112
+\c@sectionindex=\count113
+\c@answer=\count114
+\c@choice=\count115
+\c@mcquestion=\count116
+\c@mcchoice=\count117
+\c@savelistcnt=\count118
+\blank@length=\skip46
+\temp@length=\skip47
+\temp@@length=\skip48
+\namedata@vspace=\skip49
+\beforesectsep=\skip50
+\aftersectsep=\skip51
+\beforeinstsep=\skip52
+\afterinstsep=\skip53
+\temptoks=\toks16
+\temp@toks=\toks17
+\exam@c=\count119
+\exam@n=\count120
+\exam@m=\count121
+
+Randomizer initialized to 1178634499.
+\@toklist=\toks18
+\c@first=\count122
+\c@last=\count123
+\c@exam@tf=\count124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count125
+\Gm@cntv=\count126
+\c@Gm@tempcnt=\count127
+\Gm@bindingoffset=\dimen114
+\Gm@wd@mp=\dimen115
+\Gm@odd@mp=\dimen116
+\Gm@even@mp=\dimen117
+\Gm@layoutwidth=\dimen118
+\Gm@layoutheight=\dimen119
+\Gm@layouthoffset=\dimen120
+\Gm@layoutvoffset=\dimen121
+\Gm@dimlist=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count128
+\lst@gtempboxa=\box56
+\lst@token=\toks20
+\lst@length=\count129
+\lst@currlwidth=\dimen122
+\lst@column=\count130
+\lst@pos=\count131
+\lst@lostspace=\dimen123
+\lst@width=\dimen124
+\lst@newlines=\count132
+\lst@lineno=\count133
+\lst@maxwidth=\dimen125
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count134
+\lst@skipnumbers=\count135
+\lst@framebox=\box57
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (./avaliacaoOO.aux)
+\openout1 = `avaliacaoOO.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75499pt
+* \textheight=650.43pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=0.0pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count136
+(./examtop.tex) (./teoricas.tex
+\qlist@sec1=\toks23
+\qlist@scr@sec1=\toks24
+) (./pratica.tex
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+\qlist@sec2=\toks25
+\qlist@scr@sec2=\toks26
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 18.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
+
+Scrambling section 1, question: 
+4, 3, 2, 1.
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\T1/cmr/m/n/10 Math.sqrt(), sao ex-em-p-los de el-e-men-tos
+ []
+
+Scrambling section 2, question: 
+2, 1. [2]
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[3]
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 18.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 1838) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e Math.sqrt(), sao ex-em-p-lo
+s de el-e-men-tos definidos como
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[2]
+Scrambling section 1, question: 
+1, 3, 4, 2.
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\T1/cmr/m/n/10 Math.sqrt(), sao ex-em-p-los de el-e-men-tos
+ []
+
+Scrambling section 2, question: 
+2, 1. [1]
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[2]
+Underfull \hbox (badness 1838) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e Math.sqrt(), sao ex-em-p-lo
+s de el-e-men-tos definidos como
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[2]
+Scrambling section 1, question: 
+1, 2, 3, 4.
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\T1/cmr/m/n/10 Math.sqrt(), sao ex-em-p-los de el-e-men-tos
+ []
+
+Scrambling section 2, question: 
+2, 1. [1]
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[2]
+Underfull \hbox (badness 1838) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e Math.sqrt(), sao ex-em-p-lo
+s de el-e-men-tos definidos como
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[2]
+Scrambling section 1, question: 
+2, 4, 1, 3.
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+\T1/cmr/m/n/10 Math.sqrt(), sao ex-em-p-los de el-e-men-tos
+ []
+
+Scrambling section 2, question: 
+1, 2.
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[1] [2]
+Underfull \hbox (badness 1838) in paragraph at lines 18--18
+[]\T1/cmr/m/n/10 JOptionMessage.showInputDialog() e Math.sqrt(), sao ex-em-p-lo
+s de el-e-men-tos definidos como
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
+
+ []
+
+[1] [2] (./avaliacaoOO.aux) ) 
+Here is how much of TeX's memory you used:
+ 3409 strings out of 492615
+ 45543 string characters out of 6131390
+ 324901 words of memory out of 5000000
+ 7327 multiletter control sequences out of 15000+600000
+ 7443 words of font info for 21 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 29i,7n,42p,273b,1171s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-supe
+r-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf
+/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss2488.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb>
+Output written on avaliacaoOO.pdf (17 pages, 110842 bytes).
+PDF statistics:
+ 84 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
