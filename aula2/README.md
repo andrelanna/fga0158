@@ -31,10 +31,9 @@ FGA0158 - Orientação por Objetos
    ```Olá <Fulano>, seja bem vindo!``` 
    Apresente a mensagem em modo console e modo gráfico.
 
- Dica: 
- {
+
       
-    public static void main(String[] args) {
+       public static void main(String[] args) {
 
         Scanner nomeScanner = new Scanner(System.in);
         String nome = nomeScanner.next();
