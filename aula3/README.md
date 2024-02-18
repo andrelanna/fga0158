@@ -53,6 +53,9 @@ Exemplo:
       public static void main(String[] args){
       
         String[] opcoes = { "Círculo" };
+
+        //Ao contrario do JOptionPane.ShowInputDialog, essa ira mostrar opções limitadas que podemos escolher ao invés
+        //de termos que escrever a String
         
         int escolha = JOptionPane.showOptionDialog(
                 null,
