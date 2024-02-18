@@ -40,11 +40,11 @@ FGA0158 - Orientação por Objetos
 
         System.out.println("Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
 
-        ou em modo gráfico
+        //ou em modo gráfico
 
         String nome = JOptionPane.showInputDialog("Qual o seu nome?: ");
         JOptionPane.showMessageDialog(null, "Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
-    }
+       }
     
 
 
@@ -73,8 +73,8 @@ FGA0158 - Orientação por Objetos
          .
          .
        }
-       
-
+>[!NOTE]
+>Estou apenas mostrando que é possivel fazer esse exercicio tanto com o JOption.Pane quanto com o Scanner. Apenas mostrando como se faz com o Scanner
 
 5. Crie um programa que leia três valores  ```a```,```b``` e ```c```, todos do
    tipo ```float```, e retorne o valor lógico da seguinte expressão:  
