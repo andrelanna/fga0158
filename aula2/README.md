@@ -41,6 +41,10 @@ FGA0158 - Orientação por Objetos
 
         System.out.println("Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
 
+        ou em modo gráfico
+
+        String nome = JOptionPane.showInputDialog("Qual o seu nome?: ");
+        JOptionPane.showMessageDialog(null, "Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
     }
     
 
@@ -65,8 +69,10 @@ FGA0158 - Orientação por Objetos
         *** b = bScanner.nextInt();
 
         int resultado = a + b;
-
         System.out.println("O resultado é " + ***);
+         .
+         .
+         .
        }
        
 
@@ -75,11 +81,15 @@ FGA0158 - Orientação por Objetos
    tipo ```float```, e retorne o valor lógico da seguinte expressão:  
    ``` a*a == (b * b + c * c) ```  
    Utilize a entrada e saída gráfica de Java para ler e apresentar os resultados.
+
+   Dica: para a entrada e saida gráfica, faça o type-casting de String para float.
    
    Nesse tente fazer sozinho se baseando nos exemplos anteriores!
    
 Lembretes: 
-- Para leitura de dados em java no console usamos ```Scanner "variavel" = new Scanner(System.in)``` e depois faça o type-casting apropriado, mostrado no slide 12.
-- Para saida no console usamos ```System.out.println("")```.
-- Para leitura de modo gráfico usamos ```String "variavel" = JOptionPane.showInputDialog("O que sera escrito na caixa de dialogo")```.
-- Para saida de modo gráfico usamos ```JOptionPane.showMessageDialog("")```.
+- Slides sobre como fazer type-casting estão nos slides 12 e 13
+- Para leitura de dados em java no console usamos ```Scanner "variavel" = new Scanner(System.in)``` e depois faça o type-casting apropriado se necessário.
+- Para saida no console usamos ```System.out.println("String")```.
+- Para leitura de modo gráfico usamos ```String "variavel" = JOptionPane.showInputDialog("O que sera escrito na caixa de dialogo")``` e depois faça o type-casting apropriado se necessário.
+- Para saida de modo gráfico usamos ```JOptionPane.showMessageDialog(null, "String")```.
+
