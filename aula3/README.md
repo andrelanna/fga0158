@@ -48,6 +48,40 @@ Tendo o usuário informado ```10``` como raio do círculo, o programa apresentar
 em seguida:  
 ```O perímetro do círculo é 62,8 e a área é 314,15.```
 
+Exemplo:
+
+      public static void main(String[] args){
+      
+        String[] opcoes = { "Círculo" };
+        
+        int escolha = JOptionPane.showOptionDialog(
+                null,
+                "Escolha a figura geométrica desejada:",
+                "Calculadora de Área",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                opcoes,
+                opcoes[0]);
+
+        if (escolha == 0) {
+
+            String raioString = JOptionPane.showInputDialog("Informe o raio do circulo: ");
+            double raio = Float.parseFloat(raioString);
+
+            double area = (Math.PI * Math.pow(raio, 2));
+
+            System.out.println(area);
+            .
+            .
+            .
+        }
+        }
+        
+   > [!NOTE]
+   > 1 - Faça o importe da biblioteca Math ```import java.lang.Math``` para fazer o uso de funções como PI, potencia entre outros.   2 - Caso queira, o "if" pode ser substituido por "switch-case" para o codigo ficar mais limpo.
+   
+
 Para o caso do triângulo, crie uma **função** que avalie se os lados informados
 são capazes de formar um triângulo. Para tal, as seguintes regras devem ser
 satisfeitas:  
@@ -59,7 +93,7 @@ triângulo retângulo. Caso sejam lados de um triângulo retângulo, o cálculo 
 área deverá ser feito através da fórmula do Teorema de Pitágoras. Utilize uma
 função para fazer tal verificação e cálculo.
 
---
+--------------------------------------------------------------------------
 
 2. Crie um programa que solicite ao usuário que preencha um vetor de valores
    inteiros de tamanho ```x``` (a ser informado pelo próprio usuário durante a
@@ -75,14 +109,36 @@ vetor, o programa deverá informar ao usuário:
 Para cada um desses casos acima, crie uma função capaz de calcular e retornar as
 respostas.
 
--- 
+Pontapé:
+
+    public static void main(String[] args) {
+        
+        int tamanho = Integer.parseInt(JOptionPane.showInputDialog("coloque o tamanho do vetor"));
+
+        //para declararmos um vetor em java, sempre faremos esse mesmo processo
+        int vetor[] = new int[tamanho];
+     
+        for (int i = 0; i < tamanho; i++) {
+            ***Aqui, faça o vetor agarrar todos JOptionPane.InputDialog() ou Scanner e agregue cada valor a um vetor de posição i***
+        }
+        }
+
+>[!TIP]
+>A partir dos valores que estarão armazenados no vetor em cada posição, podemos criar os ifs necessarios para agarrar todos os parametros pedidos no exercicio.
+-------------------------------------------------------
 
 3. Um palíndromo é uma palavra ou texto que pode ser lido tanto da esquerda para
    a direita quanto da direita para a esquerda. Exemplos: ovo, arara,
 "Socorram-me subi no onibus em Marrocos", anilina, "amor a roma", etc. Crie um
 programa capaz de ler uma String e informar se ela é um palíndromo ou não. 
 
--- 
+>[!TIP]
+>1 - Pense que cada letra como uma posição em um vetor, que deve ser verificada por um loop, como no exemplo anterior. 2 - remova espaços em branco e converta para letras minúsculas para ajudar a verificação com as funções ```replaceAll``` e ```toLowerCase```.
+
+
+      palavra = palavra.replaceAll("\\s+", "").toLowerCase();
+
+------------------------------------------------------ 
 
 4. Crie um programa que leia duas Matrizes ```M1 (M x N)``` e ```M2 (O x P)```
    de números inteiros.  As dimensões das matrizes (M, N, O e P) deverão ser
@@ -91,3 +147,4 @@ realizar a multiplicação de M1 por M2. Sendo possível o programa deverá, atr
 de uma chamada de uma função, calcular a matriz resultante M3 da multiplicação
 de M1 por M2. 
 
+      Use tudo que aprendeu nos exercicios anteriores para realizar esta.
