@@ -28,10 +28,24 @@ FGA0158 - Orientação por Objetos
 
 1. Crie um programa "Hello World" em Java, capaz de ler seu nome e apresentar a
    seguinte mensagem:  
-   ```Olá <Fulano>, seja bem vindo!```  
-   Apresente a mensagem em modo console e modo gráfico. 
+   ```Olá <Fulano>, seja bem vindo!``` 
+   Apresente a mensagem em modo console e modo gráfico.
 
-2. Crie um programa que seja capaz de fazer a leitura de dois valores inteiros
+ Dica: 
+ {
+      
+    public static void main(String[] args) {
+
+        Scanner nomeScanner = new Scanner(System.in);
+        String nome = nomeScanner.next();
+
+        System.out.println("Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
+
+    }
+    
+
+
+3. Crie um programa que seja capaz de fazer a leitura de dois valores inteiros
    ```a``` e ```b```, e realize as seguintes operações:  
    ```a + b```  
    ```a - b```  
@@ -39,9 +53,33 @@ FGA0158 - Orientação por Objetos
    ```a / v```  
    ```a ^ b```  
    Faça a leitura dos valores e apresentação dos resultados via console.
+   
+   Dica: Se baseie no ultimo exemplo para completar os asteriscos.
+ 
+       public static void main(String[] args) {
 
-3. Crie um programa que leia três valores  ```a```,```b``` e ```c```, todos do
+         *** aScanner = new Scanner(System.in);
+         *** a = aScanner.nextInt();
+
+        *** bScanner = new Scanner(System.in);
+        *** b = bScanner.nextInt();
+
+        int resultado = a + b;
+
+        System.out.println("O resultado é " + ***);
+       }
+       
+
+
+5. Crie um programa que leia três valores  ```a```,```b``` e ```c```, todos do
    tipo ```float```, e retorne o valor lógico da seguinte expressão:  
    ``` a*a == (b * b + c * c) ```  
-   Utilize a entrada e saída gráfica de Java para ler e apresentar os
-   resultados.
+   Utilize a entrada e saída gráfica de Java para ler e apresentar os resultados.
+   
+   Nesse tente fazer sozinho se baseando nos exemplos anteriores!
+   
+Lembretes: 
+- Para leitura de dados em java no console usamos ```Scanner "variavel" = new Scanner(System.in)``` e depois faça o type-casting apropriado, mostrado no slide 12.
+- Para saida no console usamos ```System.out.println("")```.
+- Para leitura de modo gráfico usamos ```String "variavel" = JOptionPane.showInputDialog("O que sera escrito na caixa de dialogo")```.
+- Para saida de modo gráfico usamos ```JOptionPane.showMessageDialog("")```.
