@@ -29,23 +29,25 @@ FGA0158 - Orientação por Objetos
 1. Crie um programa "Hello World" em Java, capaz de ler seu nome e apresentar a
    seguinte mensagem:  
    ```Olá <Fulano>, seja bem vindo!``` 
-   Apresente a mensagem em modo console e modo gráfico.
+   Apresente a mensagem em modo console e modo gráfico. Obs.: o trecho de código
+abaixo apresenta a estrutura básica para a resolução desse exercício. Altere os
+trechos destacados com as instruções em Java para resolução do exercício. 
 
+```java
+public static void main(String[] args) {
 
-      
-       public static void main(String[] args) {
-
-        Scanner nomeScanner = new Scanner(System.in);
-        String nome = nomeScanner.next();
-
-        System.out.println("Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
-
-        //ou em modo gráfico
-
-        String nome = JOptionPane.showInputDialog("Qual o seu nome?: ");
-        JOptionPane.showMessageDialog(null, "Olá " + *que variavel colocar aqui?* + ", Seja bem vindo!");
-       }
+    //Declaracao de variáveis
+    Scanner **variavel** = new Scanner(System.in);
+    String **variavel** = **qual comando colocar aqui?**;
     
+    //saída em modo texto
+    System.out.println("Olá " + **qual variavel colocar aqui?** + ", Seja bem vindo!");
+    
+    //Saída em modo gráfico
+    String **variavel** = JOptionPane.showInputDialog("Qual o seu nome?: ");
+    JOptionPane.showMessageDialog(null, "Olá " + **qual variavel colocar aqui?** + ", Seja bem vindo!");
+}
+```    
 
 
 3. Crie um programa que seja capaz de fazer a leitura de dois valores inteiros
@@ -57,22 +59,32 @@ FGA0158 - Orientação por Objetos
    ```a ^ b```  
    Faça a leitura dos valores e apresentação dos resultados via console.
    
-   Dica: Se baseie no ultimo exemplo para completar os asteriscos.
+   Dica: Baseie-se no último exemplo para completar os asteriscos.
  
-       public static void main(String[] args) {
+```java
+public static void main(String[] args) {
+    //Declaracao de variaveis
+    *** declaracao do scanner
+    *** declaracao da variavel a 
+    *** declaracao da variavel b
+    *** declaraces de uma variavel para cada operação 
 
-         *** aScanner = new Scanner(System.in);
-         *** a = aScanner.nextInt();
+    //inicializacao do scanner
+    **scanner** = new **_____(___)**;
 
-        *** bScanner = new Scanner(System.in);
-        *** b = bScanner.nextInt();
+    //leitura dos valores no teclado: substituas as variaveis e complete o método
+    **variavel a**  = **scanner**.next___();
+    **variavel b**  = **scanner**.next___();
+    
+    //cálculo das operações
+    int resultado = a + b;
+    System.out.println("O resultado da soma é " + ***);
+     .
+     .
+     .
+}
+```
 
-        int resultado = a + b;
-        System.out.println("O resultado é " + ***);
-         .
-         .
-         .
-       }
 >[!NOTE]
 >Estou apenas mostrando que é possivel fazer esse exercicio tanto com o JOption.Pane quanto com o Scanner. Apenas mostrando como se faz com o Scanner
 
@@ -81,14 +93,12 @@ FGA0158 - Orientação por Objetos
    ``` a*a == (b * b + c * c) ```  
    Utilize a entrada e saída gráfica de Java para ler e apresentar os resultados.
 
-   Dica: para a entrada e saida gráfica, faça o type-casting de String para float.
+   Dica: para realizar a entrada e saida gráfica você deverá fazer o _type-casting_ de String para float. 
    
-   Nesse tente fazer sozinho se baseando nos exemplos anteriores!
-   
-Lembretes: 
-- Slides sobre como fazer type-casting estão nos slides 12 e 13
-- Para leitura de dados em java no console usamos ```Scanner "variavel" = new Scanner(System.in)``` e depois faça o type-casting apropriado se necessário.
-- Para saida no console usamos ```System.out.println("String")```.
-- Para leitura de modo gráfico usamos ```String "variavel" = JOptionPane.showInputDialog("O que sera escrito na caixa de dialogo")``` e depois faça o type-casting apropriado se necessário.
-- Para saida de modo gráfico usamos ```JOptionPane.showMessageDialog(null, "String")```.
 
+Lembretes: 
+- Slides sobre _type-casting_ estão nos slides 12 e 13.
+- Para leitura de dados em Java no console usamos o comando ```Scanner "variavel" = new Scanner(System.in);```. Uma vez que o Scanner está instanciando, você deverá realizar chamadas ao método correspondente ao tipo de dado que você quer ler do teclado.
+- Para saida de dados no console usamos o comando ```System.out.println("String")```.
+- Para leitura de dados de modo gráfico usamos ```String "variavel" = JOptionPane.showInputDialog("O que sera escrito na caixa de dialogo")```. Os dados lidos dessa maneira serão sempre do tipo String, portanto, é necessário realizar o _type-casting_ para o tipo de dado apropriado se necessário.
+- Para a saída de modo gráfico usamos o comando ```JOptionPane.showMessageDialog(null, "String")```.
