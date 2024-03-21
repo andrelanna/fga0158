@@ -6,6 +6,7 @@ package fga0158;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
+public class Exercicio1 {
 
 public static void main(String[] args) {
 
@@ -19,4 +20,5 @@ public static void main(String[] args) {
     //Saída em modo gráfico
     String **variavel** = JOptionPane.showInputDialog("Qual o seu nome?: ");
     JOptionPane.showMessageDialog(null, "Olá " + **qual variavel colocar aqui?** + ", Seja bem vindo!");
+}
 }
