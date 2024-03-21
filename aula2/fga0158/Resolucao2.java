@@ -5,7 +5,7 @@ trechos destacados com as instruções em Java para resolução do exercício.
 package fga0158;
 import java.util.Scanner;
 
-public class Exercicio2 {
+public class Resolucao2 {
 
 public static void main(String[] args) {
     //Declaracao de variaveis
