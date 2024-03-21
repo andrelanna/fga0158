@@ -6,7 +6,7 @@ package fga0158;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class Exercicio1 {
+public class Resolucao1 {
 
 public static void main(String[] args) {
 
