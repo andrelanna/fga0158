@@ -3,9 +3,7 @@ abaixo apresenta a estrutura básica para a resolução desse exercício. Altere
 trechos destacados com as instruções em Java para resolução do exercício. 
 
 package fga0158;
-
 import java.util.Scanner;
-
 import javax.swing.JOptionPane;
 
 
