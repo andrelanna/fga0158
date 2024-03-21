@@ -26,28 +26,14 @@ FGA0158 - Orientação por Objetos
 
 **Exercícios de fixação**
 
+> [!IMPORTANT]
+> Dicas para resoluções desses exercicios estarão na pasta "fga0158"
+
 1. Crie um programa "Hello World" em Java, capaz de ler seu nome e apresentar a
    seguinte mensagem:  
    ```Olá <Fulano>, seja bem vindo!``` 
-   Apresente a mensagem em modo console e modo gráfico. Obs.: o trecho de código
-abaixo apresenta a estrutura básica para a resolução desse exercício. Altere os
-trechos destacados com as instruções em Java para resolução do exercício. 
-
-```java
-public static void main(String[] args) {
-
-    //Declaracao de variáveis
-    Scanner **variavel** = new Scanner(System.in);
-    String **variavel** = **qual comando colocar aqui?**;
-    
-    //saída em modo texto
-    System.out.println("Olá " + **qual variavel colocar aqui?** + ", Seja bem vindo!");
-    
-    //Saída em modo gráfico
-    String **variavel** = JOptionPane.showInputDialog("Qual o seu nome?: ");
-    JOptionPane.showMessageDialog(null, "Olá " + **qual variavel colocar aqui?** + ", Seja bem vindo!");
-}
-```    
+   Apresente a mensagem em modo console e modo gráfico.
+   
 
 
 3. Crie um programa que seja capaz de fazer a leitura de dois valores inteiros
@@ -59,34 +45,7 @@ public static void main(String[] args) {
    ```a ^ b```  
    Faça a leitura dos valores e apresentação dos resultados via console.
    
-   Dica: Baseie-se no último exemplo para completar os asteriscos.
- 
-```java
-public static void main(String[] args) {
-    //Declaracao de variaveis
-    *** declaracao do scanner
-    *** declaracao da variavel a 
-    *** declaracao da variavel b
-    *** declaraces de uma variavel para cada operação 
-
-    //inicializacao do scanner
-    **scanner** = new **_____(___)**;
-
-    //leitura dos valores no teclado: substituas as variaveis e complete o método
-    **variavel a**  = **scanner**.next___();
-    **variavel b**  = **scanner**.next___();
-    
-    //cálculo das operações
-    int resultado = a + b;
-    System.out.println("O resultado da soma é " + ***);
-     .
-     .
-     .
-}
-```
-
->[!NOTE]
->Estou apenas mostrando que é possivel fazer esse exercicio tanto com o JOption.Pane quanto com o Scanner. Apenas mostrando como se faz com o Scanner
+   
 
 5. Crie um programa que leia três valores  ```a```,```b``` e ```c```, todos do
    tipo ```float```, e retorne o valor lógico da seguinte expressão:  
