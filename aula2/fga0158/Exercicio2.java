@@ -2,7 +2,7 @@
 package fga0158;
 import java.util.Scanner;
 
-public class Exercicio3 {
+public class Exercicio2 {
 
 public static void main(String[] args) {
     //Declaracao de variaveis
