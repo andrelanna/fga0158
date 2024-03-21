@@ -1,3 +1,6 @@
+Obs.: o trecho de código
+abaixo apresenta a estrutura básica para a resolução desse exercício. Altere os
+trechos destacados com as instruções em Java para resolução do exercício. 
 
 package fga0158;
 import java.util.Scanner;
