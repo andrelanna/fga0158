@@ -36,7 +36,7 @@ FGA0158 - Orientação por Objetos
    
 
 
-3. Crie um programa que seja capaz de fazer a leitura de dois valores inteiros
+2. Crie um programa que seja capaz de fazer a leitura de dois valores inteiros
    ```a``` e ```b```, e realize as seguintes operações:  
    ```a + b```  
    ```a - b```  
@@ -47,7 +47,7 @@ FGA0158 - Orientação por Objetos
    
    
 
-5. Crie um programa que leia três valores  ```a```,```b``` e ```c```, todos do
+3. Crie um programa que leia três valores  ```a```,```b``` e ```c```, todos do
    tipo ```float```, e retorne o valor lógico da seguinte expressão:  
    ``` a*a == (b * b + c * c) ```  
    Utilize a entrada e saída gráfica de Java para ler e apresentar os resultados.
