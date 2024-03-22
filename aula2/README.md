@@ -26,7 +26,6 @@ FGA0158 - Orientação por Objetos
 
 **Exercícios de fixação**
 
-> [!IMPORTANT]
 > Dicas para resoluções dos exercicios 1 e 2 estarão na pasta "fga0158"
 
 1. Crie um programa "Hello World" em Java, capaz de ler seu nome e apresentar a

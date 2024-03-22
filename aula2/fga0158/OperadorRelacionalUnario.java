@@ -1,7 +1,9 @@
-package fga0158;
-
 import javax.swing.JOptionPane;
 
+/**
+ * Exemplo de utilizacao do operador ternario. 
+ * @author andre
+ */
 public class OperadorRelacionalUnario {
 	
 	public static void main (String[] args) {
@@ -17,8 +19,12 @@ public class OperadorRelacionalUnario {
 		b = Integer.parseInt(strB);
 		c = Integer.parseInt(strC);
 		
+		/*
+		 * Utilizacao do operador ternario no interior da construcao da 
+		 * string de resposta
+		 */
 		String resposta = "Os valores " + a + ", " + b + " e " + c + 
-				          ((a*a == b*b + c*c) ? " formam " : " não formam") + 
+				          ((a*a == b*b + c*c) ? " formam " : " não formam") +  //<<-- aqui é utilizado o operador ternario 
 				          " os lados de um triângulo retângulo.";
 		
 		JOptionPane.showMessageDialog(null, resposta);
