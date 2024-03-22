@@ -31,14 +31,18 @@ FGA0158 - Orientação por Objetos
    área das seguintes figuras geométricas: círculo, quadrado, retângulo e
    trapézio. O usuário deverá inicialmente informar qual a figura geométrica e,
    a partir de então, os programa deverá ler os dados da figura e calcular seu
-   perímetro e área.   
+   perímetro e área. Utilize funções para o cálculo da área e do perímetro de
+   figura.   
 
 Exemplo de utilização:  
-```Escolha a figura geométrica desejada```  
-```1 - Circulo```  
-```2 - Quadrado```  
-```3 - Retângulo```  
-```4 - Trapézio```  
+
+```
+Escolha a figura geométrica desejada  
+1 - Circulo  
+2 - Quadrado  
+3 - Retângulo  
+4 - Trapézio  
+```
 
 Supondo que o usuário tenha escolhido a opção ```Círculo```, o programa
 apresenta a seguinte mensagem em seguida:  
@@ -47,43 +51,13 @@ apresenta a seguinte mensagem em seguida:
 Tendo o usuário informado ```10``` como raio do círculo, o programa apresentará
 em seguida:  
 ```O perímetro do círculo é 62,8 e a área é 314,15.```
-
-Exemplo:
-
-      public static void main(String[] args){
-      
-        String[] opcoes = { "Círculo" };
-
-        //Ao contrario do JOptionPane.ShowInputDialog, essa ira mostrar opções limitadas que podemos escolher ao invés
-        //de termos que escrever a String
-        
-        int escolha = JOptionPane.showOptionDialog(
-                null,
-                "Escolha a figura geométrica desejada:",
-                "Calculadora de Área",
-                JOptionPane.DEFAULT_OPTION,
-                JOptionPane.QUESTION_MESSAGE,
-                null,
-                opcoes,
-                opcoes[0]);
-
-        if (escolha == 0) {
-
-            String raioString = JOptionPane.showInputDialog("Informe o raio do circulo: ");
-            double raio = Float.parseFloat(raioString);
-
-            double area = (Math.PI * Math.pow(raio, 2));
-
-            System.out.println(area);
-            .
-            .
-            .
-        }
-        }
         
    > [!NOTE]
-   > 1 - Faça o importe da biblioteca Math ```import java.lang.Math``` para fazer o uso de funções como PI, potencia entre outros.   2 - Caso queira, o "if" pode ser substituido por "switch-case" para o codigo ficar mais limpo.
-   
+   > 1 - Será necessário importar a biblioteca Math ```java.lang.Math```
+   > para fazer o uso da constante PI e de funções como potencia, dentre outras.   
+   > 2 - Dica: utilize a instrução `switch-case` para realizar os cálculos de
+   > área e perímetro conforme o tipo de figura selecionada pelo usuário.  
+
 
 Para o caso do triângulo, crie uma **função** que avalie se os lados informados
 são capazes de formar um triângulo. Para tal, as seguintes regras devem ser
@@ -112,22 +86,12 @@ vetor, o programa deverá informar ao usuário:
 Para cada um desses casos acima, crie uma função capaz de calcular e retornar as
 respostas.
 
-Pontapé:
+"Pontapé" para o exercício está disponível no diretório dessa aula, com o nome
+`Exercicio2.java`:
 
-    public static void main(String[] args) {
-        
-        int tamanho = Integer.parseInt(JOptionPane.showInputDialog("coloque o tamanho do vetor"));
-
-        //para declararmos um vetor em java, sempre faremos esse mesmo processo
-        int vetor[] = new int[tamanho];
-     
-        for (int i = 0; i < tamanho; i++) {
-            ***Aqui, faça o vetor agarrar todos JOptionPane.InputDialog() ou Scanner e agregue cada valor a um vetor de posição i***
-        }
-        }
 
 >[!TIP]
->A partir dos valores que estarão armazenados no vetor em cada posição, podemos criar os ifs necessarios para agarrar todos os parametros pedidos no exercicio.
+> A partir do vetor preenchido com os valores, pode-se passá-lo como parâmetro para cada função criada para resolução do exercicio. Cada um dos itens solicitados no exercício pode ser implementado por meio de uma função.
 -------------------------------------------------------
 
 3. Um palíndromo é uma palavra ou texto que pode ser lido tanto da esquerda para
@@ -135,11 +99,12 @@ Pontapé:
 "Socorram-me subi no onibus em Marrocos", anilina, "amor a roma", etc. Crie um
 programa capaz de ler uma String e informar se ela é um palíndromo ou não. 
 
->[!TIP]
->1 - Pense que cada letra como uma posição em um vetor, que deve ser verificada por um loop, como no exemplo anterior. 2 - remova espaços em branco e converta para letras minúsculas para ajudar a verificação com as funções ```replaceAll``` e ```toLowerCase```.
+> [!TIP]
+> 1 - Transforme a string a ser avaliada (se é palindromo ou não) em um vetor e
+> opere sobre os índices do vetor.
+> 2 - remova espaços em branco e converta para letras minúsculas para ajudar a
+> verificação com as funções ```replaceAll``` e ```toLowerCase```.
 
-
-      palavra = palavra.replaceAll("\\s+", "").toLowerCase();
 
 ------------------------------------------------------ 
 
@@ -150,4 +115,5 @@ realizar a multiplicação de M1 por M2. Sendo possível o programa deverá, atr
 de uma chamada de uma função, calcular a matriz resultante M3 da multiplicação
 de M1 por M2. 
 
-      Use tudo que aprendeu nos exercicios anteriores para realizar esta.
+   Use tudo que aprendeu nos exercicios anteriores (vetores, matrizes, funções,
+procedimentos) para realizar este exercicio.

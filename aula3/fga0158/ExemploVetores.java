@@ -14,12 +14,12 @@ public class ExemploVetores {
 	 */
 	//Função que le um inteiro do teclado e o retorna no ponto em que foi chamado
 	private static int lerInteiros(int posicao) {
-		String strValor = JOptionPane.showInputDialog("Informe um valor inteiro para v["+posicao+"]");
+		String strValor = JOptionPane.showInputDialog("Informe um valor inteiro para v[" + posicao + "]");
 		int valor = Integer.parseInt(strValor);
 		return valor;
 	}
 
-	
+
 	/**************************************************************************
 	 * Método MAIN: método que inicializa a execução do algoritmo. 
 	 * 
@@ -27,19 +27,19 @@ public class ExemploVetores {
 	public static void main(String[] args) {
 		//Ler um numero X de valores inteiros, armazena em vetor, 
 		//e ao final informa quantidade de numeros zeros
-		
+
 		String strTamanho = JOptionPane.showInputDialog("Informe a quantidade de numeros");
 		int tamanho = Integer.parseInt(strTamanho);
-		
+
 		//declarar e criar o vetor
 		int vetor[];  //declaracao do vetor
 		vetor = new int[tamanho];  //criacao do vetor
-		
+
 		//ler os valores do vetor
 		for (int i = 0; i < tamanho; i++) {
 			vetor[i] = lerInteiros(i);
 		}
-		
+
 		//contar o numero de O's dentro do vetor
 		int qtdeZeros = 0;
 		for (int i=0; i < vetor.length; i++) {
@@ -47,7 +47,7 @@ public class ExemploVetores {
 				qtdeZeros++;
 			}
 		}
-		
+
 		JOptionPane.showMessageDialog(null, "Quantidade de zeros no vetor = " + qtdeZeros);
 	}
 
