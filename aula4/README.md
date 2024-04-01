@@ -256,3 +256,21 @@ Exemplos:
 - $9_{10} = 1001_{2}$
 - $10_{10} = 1010_{2}$
 
+7 - Crie um algoritmo que seja capaz de calcular a sequencia de Fibonacci em até
+10 numeros. Os valores calculados para a sequencia deverão ser armazenados em um
+vetor e apresentados ao final da execução. 
+
+Exemplo:  
+`[ 1, 1, 2, 3, 5, 8, 13, 21, 42, 63 ]`
+
+:star: *Desafio:* utilize o passo do for para calcular a sequencia, sabendo que
+o valor do 10o. elemento é 63.  
+
+
+8 - 
+
+
+9 -
+
+
+10 -
