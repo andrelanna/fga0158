@@ -14,23 +14,23 @@ FGA - Faculdade do Gama
 3         | 25/03/24 | [Revisão de programação - parte 2](aula3/)
 4         | 27/03/24 | [Exercícios de revisão de programação básica](aula4/)
 5         | 01/04/24 | [Exercicios de revisão de programação básica](aula4/)
-6         | 03/04/24 | Avaliação 1 
-7         | 08/04/24 | [Introdução a Orientação por Objetos - parte 1](aula6/) 
-8         | 10/04/24 | [Introdução a Orientação por Objetos - parte 2](aula7/)
-9         | 15/04/24 | [Modularidade / encapsulamento](aula8/)
-10        | 17/04/24 | [Exercicios de revisão de introdução a OO e encapsulamento](aula9/)
-11        | 22/04/24 | [Herança](aula10/)
-12        | 24/04/24 | [Polimorfismo - parte 1](aula11/)
-13        | 29/04/24 | [Polimorfismo - parte 2](aula12/)
-14        | 01/05/24 | [Exercícios de revisão de herança e polimorfismo](aula13/)
-15        | 06/05/24 | Feriado  
-16        | 08/05/24 | Avaliação 2
-17        | 13/05/24 | [Exceções - parte 1](aula15/)                  
-18        | 15/05/24 | [Exceções - parte 2](aula16/)
-19        | 20/05/24 | [Threads](aula17/)
-20        | 22/05/24 | [Exercícios de revisão de Exceções e Threads](aula18/)
-21        | 27/05/24 | [link](aula19/)
-22        | 29/05/24 | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
+6         | 03/04/24 | ~~Avaliação 1~~ [Exercicios de revisão de programação básica](aula4/)
+7         | 08/04/24 | Avaliação 1 
+8         | 10/04/24 | [Introdução a Orientação por Objetos - parte 1](aula6/) 
+9         | 15/04/24 | [Introdução a Orientação por Objetos - parte 2](aula7/)
+10        | 17/04/24 | [Modularidade / encapsulamento](aula8/)
+11        | 22/04/24 | [Exercicios de revisão de introdução a OO e encapsulamento](aula9/)
+12        | 24/04/24 | [Herança](aula10/)
+13        | 29/04/24 | [Polimorfismo - parte 1](aula11/)
+14        | 01/05/24 | [Polimorfismo - parte 2](aula12/)
+15        | 06/05/24 | [Exercícios de revisão de herança e polimorfismo](aula13/)
+16        | 08/05/24 | Feriado  
+17        | 13/05/24 | Avaliação 2
+18        | 15/05/24 | [Exceções - parte 1](aula15/)                  
+19        | 20/05/24 | [Exceções - parte 2](aula16/)
+20        | 22/05/24 | [Threads](aula17/)
+21        | 27/05/24 | [Exercícios de revisão de Exceções e Threads](aula18/)
+22        | 29/05/24 | [link](aula19/)
 24        | 03/06/24 | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
 24        | 05/06/24 | xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
 25        | 10/06/24 | [Interfaces gráficas, orientação a eventos](aula24/)
