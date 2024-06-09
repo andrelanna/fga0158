@@ -18,7 +18,7 @@ FGA - Faculdade do Gama
 7         |   08/04/24            | Avaliação 1 
 8         |   10/04/24            | Correção da prova em sala de aula.
 9         |   15/04/24            | 
-10        | ~~17/04/24~~ 05/06/24 | [Exercícios de revisão - retorno às aulas](exercicios/listaRevisao)
+10        | ~~17/04/24~~ 05/06/24 | [Exercícios de revisão - retorno às aulas](exercicios/revisaoCB)
 11        | ~~22/04/24~~ 10/06/24 | [Introdução a Orientação por Objetos - parte 1](aula6/) 
 12        | ~~24/04/24~~ 12/06/24 | [Introdução a Orientação por Objetos - parte 2](aula7/)
 13        | ~~29/04/24~~ 17/06/24 | [Modularidade / encapsulamento](aula8/)
