@@ -44,7 +44,7 @@ public class EscritaArquivos {
 
 		for (int num : numeros) {
 			bw.write(Integer.toString(num));            //Escrita de uma string no buffer. Note a conversão de tipo! 
-			bw.write(' ');
+			bw.write('\n');
 		}
 		bw.close();  //Fecha o buffer e, consequentemente, o arquivo. 
 	}
