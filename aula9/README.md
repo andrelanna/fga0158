@@ -4,7 +4,7 @@ FGA0158 - Orientação por Objetos
 
 ---
 
-# Aula 8 - Exercícios de revisão de introdução a OO e encapsulamento
+# Aula 9 - Exercícios de revisão de introdução a OO e encapsulamento
 
 Instruções: 
 - Esses exercícios são apenas para fixação do conteúdo vistos até então na
@@ -207,4 +207,109 @@ Deseja calcular novas progressões? (s/n)
 >> n
 ```
 
+## Exercício 4 - Cadastro de alunos e turmas. 
 
+Crie um programa que seja capaz de cadastrar uma turma de uma determinada
+disciplina. Cada disciplina é caracterizada pelo seu nome, seu código e sua
+carga horária. Cada turma está associada a uma disciplina, além de possuir um
+professor, um conjunto de no máximo 40 alunos, uma sala e um horário.
+Professores e alunos são caracterizados pelo nome, telefone e email de contato.
+Para os professores deverão ser informados ainda sua matricula funcional e sua
+titulação (graduação, mestrado, doutorado ou pós-doutorado). Para os alunos
+deverão ser informados sua matrícula estudantil, o curso ao qual estão
+vinculados e o semestre/ano de ingresso na universidade. 
+
+O programa deverá ser capaz de ter um cadastro de turmas, professores e alunos.
+Com base nesse cadastro, serão feitas as associações entre os objetos dessas
+três classes. 
+
+Apresente o diagrama UML de classes e de objetos. 
+
+Exemplo de utilização: 
+
+```
+O que você deseja fazer?
+1 - Cadastrar aluno
+2 - Cadastrar professor
+3 - Cadastrar turma
+4 - Matricular aluno em turma
+5 - Imprimir lista de frequencia para uma turma
+>> 1
+Informe o nome do aluno
+>> Andre
+Informe a matricula do aluno
+>> 13
+Informe o curso do aluno
+>> Engenharia de software
+... <-- demais itens de aluno 
+
+O que você deseja fazer?
+1 - Cadastrar aluno
+2 - Cadastrar professor
+3 - Cadastrar turma
+4 - Matricular aluno em turma
+5 - Imprimir lista de frequencia para uma turma
+>> 2
+Informe o nome do professor
+>> Lanna
+Informe a matricula funcional do professor
+>> 131313
+Informe a titulação do professor
+>> Doutorado
+... <-- demais itens de professor
+
+O que você deseja fazer?
+1 - Cadastrar aluno
+2 - Cadastrar professor
+3 - Cadastrar turma
+4 - Matricular aluno em turma
+5 - Imprimir lista de frequencia para uma turma
+>> 3
+Informe o nome da disciplina
+>> Orientacao por objetos
+Qual sala essa turma ocupa?
+>> I6
+Qual o horário dessa turma?
+>> Segundas e quartas, 12 às 14hs
+Qual o código da turma?
+>> T13
+... << demais itens de turma
+
+O que você deseja fazer?
+1 - Cadastrar aluno
+2 - Cadastrar professor
+3 - Cadastrar turma
+4 - Matricular aluno em turma
+5 - Imprimir lista de frequencia para uma turma
+>> 4
+
+Qual turma você deseja matricular alunos?
+>> T13
+Informe o código do aluno a ser matriculado?
+>> 13
+Deseja matricular o aluno ANDRE na turma T1 - ORIENTACAO POR OBJETOS? (s/n)
+>> s
+Aluno matriculado com sucesso. 
+
+O que você deseja fazer?
+1 - Cadastrar aluno
+2 - Cadastrar professor
+3 - Cadastrar turma
+4 - Matricular aluno em turma
+5 - Imprimir lista de frequencia para uma turma
+>> 5
+Qual turma você deseja imprimir a lista? 
+>> T13
+
+T13 - Orientacao por Objetos
+Professor: Lanna
+Sala: I6
+Horário: Segundas e quartas, 12 às 14hs
+
+Numero Matricula Nome
+1      131313    Andre
+2      141414    Maria
+3      151515    Jose
+4      161616    Beatriz
+
+```
