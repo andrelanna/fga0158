@@ -184,3 +184,25 @@ As matrizes foram gravadas no arquivo matrizes.txt
 ```
 
 ---
+## Exercício 3 - Calculadora de progressão aritmética e progressão geométrica
+
+Crie um programa que, para os valores ```a0```, ```n``` e ```r``` informados
+pelo usuário, seja capaz de calcular as progressões aritmética e geométrica. 
+
+Exemplo de utilização: 
+```
+Informe o valor de a0: 
+>> 1
+Informe o valor de r:
+>> 2
+Informe o valor de n:
+>> 5
+
+PA = [1, 3, 5, 7, 9]
+PG = [1, 2, 4, 8, 16]
+
+Deseja calcular novas progressões? (s/n)
+>> n
+```
+
+
