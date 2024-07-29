@@ -15,6 +15,9 @@ abaixo e o conjunto de classes presentes nesse diretório (como ponto de partida
 para o trabalho), os grupos de quatro alunos deverão implementar um sistema em
 Java que explore ao máximo os conceitos de Orientação por Objetos.
 
+O diagrama de classes abaixo representa parte do que já está implementado. 
+![Diagrama de classes](diagClasses.jpg)
+
 ## Cenário da Oficina Mecânica:  
 Um sistema de gestão acadêmica é responsável, basicamente, por realizar o
 cadastro de todos os elementos pertencentes ao domínio de uma universidade. Por
