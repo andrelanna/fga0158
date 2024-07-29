@@ -55,9 +55,9 @@ O conteúdo da disciplina será avaliado através de 3 avaliações e 1 trabalho
 prático, com pontuação distribuída da seguinte maneira: 
 
 Avaliação 1: 20 pontos  
-Avaliação 2: ~~~20~~~ 30 pontos  
-~~~Avaliação 3~~~ Trabalho prático: 50 pontos  
-~~~Exercícios práticos: 30 pontos~~~  
+Avaliação 2: ~~20~~ 30 pontos  
+~~Avaliação 3~~ Trabalho prático: 50 pontos  
+~~Exercícios práticos: 30 pontos~~
 
 
 #### Trabalho Prático
