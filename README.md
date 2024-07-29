@@ -62,6 +62,7 @@ Avaliação 2: ~~20~~ 30 pontos
 
 #### Trabalho Prático
 
+O enunciado do trabalho prático encontra-se nesse [link](trabalhoPratico/)
 
 
 #### Horário de atendimento
