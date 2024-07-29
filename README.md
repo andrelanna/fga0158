@@ -54,26 +54,13 @@ FGA - Faculdade do Gama
 O conteúdo da disciplina será avaliado através de 3 avaliações e 1 trabalho
 prático, com pontuação distribuída da seguinte maneira: 
 
-* Avaliação 1: 20 pontos
-* Avaliação 2: 20 pontos
-* Avaliação 3: 30 pontos
-* Exercícios práticos: 30 pontos
+Avaliação 1: 20 pontos  
+Avaliação 2: ~~~20~~~ 30 pontos  
+~~~Avaliação 3~~~ Trabalho prático: 50 pontos  
+~~~Exercícios práticos: 30 pontos~~~  
+
 
 #### Trabalho Prático
-
-Ainda em definição
-<!--- O trabalho prático deverá ser realizado em grupos de 4 ou 5 alunos. O grupo -->
-<!--- deverá realizar as três entregas do trabalho, não serão permitidas trocas de -->
-<!--- membros entre grupos à partir da primeira entrega. O trabalho deverá ser -->
-<!--- realizado em JAVA e na ferramenta de desenho UML [draw.io.](https://app.diagrams.net/) -->
-<!---  -->
-<!--- Enunciados / datas de entrega:  -->
-<!---  -->
-<!--- | Enunciado| Data de entrega| -->
-<!--- |----------|:-----------|   -->
-<!--- | 1a parte | 22/05/2023 |   -->
-<!--- | 2a parte | ~~12/06/2023~~ 05/07/2023 |  -->
-<!--- | 3a parte | ~~10/07/2023~~ 12/07/2023 |   -->
 
 
 
