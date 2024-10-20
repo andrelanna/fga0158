@@ -29,7 +29,7 @@ FGA - Faculdade do Gama
 18        |  11/12/2024              |  [Exercícios de revisão de herança e polimorfismo](aula13/)
 19        |  16/12/2024              |  Avaliação 2
 20        |  18/12/2024              |  
-          |  23/12/2024 -- 5/1/2025  |  Recesso
+\-        |  23/12/2024 - 5/1/2025   |  Recesso
 21        |    6/1/2025              |  [Exceções - parte 1](aula15/)
 22        |    8/1/2025              |  [Exceções - parte 2](aula16/)
 23        |   13/1/2025              |  [Threads](aula17/)
