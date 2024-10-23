@@ -42,6 +42,7 @@ Escolha a figura geométrica desejada
 2 - Quadrado  
 3 - Retângulo  
 4 - Trapézio  
+5 - Triângulo
 ```
 
 Supondo que o usuário tenha escolhido a opção ```Círculo```, o programa
