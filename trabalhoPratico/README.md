@@ -167,7 +167,7 @@ Relatório em PDF com:
 2. Código Fonte 
 
 - Implemente o sistema com todas as funcionalidades descritas acima, em Java. 
-- Use um repositório Git, disponibilizado no GitHub, com commits organizados por funcionalidade. Os nomes dos componentes dos grupos e os endereços dos repositórios deverão ser informados no formulário presente no seguinte endereço:  
+- Use um repositório Git, disponibilizado no GitHub, com commits organizados por funcionalidade. Os nomes dos componentes dos grupos e os endereços dos repositórios deverão ser informados no formulário presente no seguinte endereço: [https://docs.google.com/forms/d/1Kq1NaMd-YdDR2WdVLbKkge21Wj4k4MRDbLue_1Ium-U/preview](https://docs.google.com/forms/d/1Kq1NaMd-YdDR2WdVLbKkge21Wj4k4MRDbLue_1Ium-U/preview)
    
 ## Avaliação:   
 Critérios de Avaliação: 
