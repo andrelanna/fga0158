@@ -153,7 +153,7 @@ Crie as seguintes exceções personalizadas e faça o devido lançamento, confor
 
 ## Entrega:   
 
-Data de entrega: 10/02/2025.
+Data de entrega: ~~10/02/2025~~14/02/2025 (impreterivelmente).
 
 1. Documentação 
 
