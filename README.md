@@ -10,9 +10,9 @@ FGA - Faculdade do Gama
 **Aula**  | **Data**                 | **Conteúdo**
 ---------:|:------------------------:|:----------
 1         |   24/03/2025             |  [Apresentação do plano de ensino](/aula1)
-2         |   26/03/2025             |  [Revisão de programação - parte 1](/aula2) <br/> [Revisão de programação - parte 2](/aula3)
-3         |   31/03/2025             |  Exercícios de revisão de programação básica
-4         |   02/04/2025             |  Exercícios de revisão de programação básica
+2         |   26/03/2025             |  [Revisão de programação - parte 1](/aula2)   
+3         |   31/03/2025             |  [Revisão de programação - parte 2](/aula3) <br/> Exercícios de revisão de programação básica
+4         |   02/04/2025             |  [Exercícios de revisão de programação básica / estudo dirigido](/aula4)  
 5         |   07/04/2025             |  **Avaliação 1**
 6         |   09/04/2025             |  Correção da avaliação 1 em sala. 
 7         |   14/04/2025             |  Introdução a Orientação por objetos - parte 1
