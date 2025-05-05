@@ -15,13 +15,13 @@ FGA - Faculdade do Gama
 4         |   02/04/2025             |  [Exercícios de revisão de programação básica / estudo dirigido](/aula4)  
 5         |   07/04/2025             |  **Avaliação 1**
 6         |   09/04/2025             |  Correção da avaliação 1 em sala. 
-7         |   14/04/2025             |  Introdução a Orientação por objetos - parte 1
+7         |   14/04/2025             |  [Introdução a Orientação por objetos - parte 1](/aula6)
 8         |   16/04/2025             |  Exercícios Introdução a Orientação por objetos - parte 1
 9         |   21/04/2025             |  Feriado (Tiradentes)
 10        |   23/04/2025             |  Introdução a Orientação por objetos - parte 2
-11        |   28/04/2025             |  Exercícios Introdução a Orientação por objetos - parte 2
-12        |   30/04/2025             |  Modularidade / Encapsulamento - Entrega parcial do trabalho prático
-13        |   05/05/2025             |  Exercícios Modularidade / Encapsulamento
+11        |   28/04/2025             |  [Exercícios Introdução a Orientação por objetos - parte 2](/aula7)
+12        |   30/04/2025             |  [Modularidade / Encapsulamento - Entrega parcial do trabalho prático](/aula8)
+13        |   05/05/2025             |  [Exercícios Modularidade / Encapsulamento](/aula9)
 14        |   07/05/2025             |  **Avaliação 2**
 15        |   12/05/2025             |  Herança - Parte 1
 16        |   14/05/2025             |  Herança - Parte 2
