@@ -22,8 +22,8 @@ FGA - Faculdade do Gama
 11        |   22/09/2025             |  [Modularidade / Encapsulamento - Entrega parcial do trabalho prático](/aula8)
 12        |   24/09/2025             |  [Exercícios Modularidade / Encapsulamento](/aula9)
 13        |   29/09/2025             |  **Avaliação 2**
-14        |   01/10/2025             |  Herança - Parte 1
-15        |   06/10/2025             |  Herança - Parte 2
+14        |   01/10/2025             |  [Herança - Parte 1](/aula10)
+15        |   06/10/2025             |  [Herança - Parte 2](/aula10)
 16        |   08/10/2025             |  Polimorfismo - Parte 1
 17        |   13/10/2025             |  Polimorfismo - Parte 2
 18        |   15/10/2025             |  Exercícios Herança e Polimorfismo
