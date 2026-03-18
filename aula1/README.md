@@ -46,44 +46,46 @@ FGA0158 - Orientação por Objetos
     - Projeto e estudo de caso com arcabouço MVC web para um projeto OO
 ---
 - Cronograma de aulas
-**Aula**  | **Data**                 | **Conteúdo**
----------:|:------------------------:|:----------
-1         |   18/08/2025             |  [Apresentação do plano de ensino](/aula1)
-2         |   20/08/2025             |  [Revisão de programação - parte 1](/aula2)   
-3         |   25/08/2025             |  [Revisão de programação - parte 2](/aula3) <br/> Exercícios de revisão de programação básica
-4         |   27/08/2025             |  [Exercícios de revisão de programação básica / estudo dirigido](/aula4)  
-5         |   01/09/2025             |  **Avaliação 1**
-6         |   03/09/2025             |  Correção da avaliação 1 em sala. 
-7         |   08/09/2025             |  [Introdução a Orientação por objetos - parte 1](/aula6)
-8         |   10/09/2025             |  Exercícios Introdução a Orientação por objetos - parte 1
-9         |   15/09/2025             |  Introdução a Orientação por objetos - parte 2
-10        |   17/09/2025             |  [Exercícios Introdução a Orientação por objetos - parte 2](/aula7)
-11        |   22/09/2025             |  [Modularidade / Encapsulamento - Entrega parcial do trabalho prático](/aula8)
-12        |   24/09/2025             |  [Exercícios Modularidade / Encapsulamento](/aula9)
-13        |   29/09/2025             |  **Avaliação 2**
-14        |   01/10/2025             |  Herança - Parte 1
-15        |   06/10/2025             |  Herança - Parte 2
-16        |   08/10/2025             |  Polimorfismo - Parte 1
-17        |   13/10/2025             |  Polimorfismo - Parte 2
-18        |   15/10/2025             |  Exercícios Herança e Polimorfismo
-19        |   20/10/2025             |  Exercícios Herança e Polimorfismo - Entrega parcial do trabalho prático
-20        |   22/10/2025             |  Exceções - parte 1
-21        |   27/10/2025             |  Atividade extra-classe - Elaboração do trabalho
-22        |   29/10/2025             |  Semana universitária
-23        |   03/11/2025             |  Semana Universitária
-24        |   05/11/2025             |  Exceções - parte 2
-25        |   10/11/2025             |  Exercícios - Exceções
-26        |   12/11/2025             |  **Avaliação 3**
-27        |   17/11/2025             |  Threads - Parte 1
-28        |   19/11/2025             |  Threads - Parte 2
-29        |   24/11/2025             |  Exercícios - Threads
-30        |   26/11/2025             |  Interfaces gráficas - Orientação a eventos - parte 1
-31        |   01/12/2025             |  Interfaces gráficas - Orientação a eventos - parte 2
-32        |   03/12/2025             |  **Entrega final do trabalho** 
-33        |   08/12/2025             |  **Entrega final do trabalho** 
-34        |   10/12/2025             |  Aula extra / Revisão de menção
-35        |   15/12/2025             |  Aula extra / Revisão de menção
-36        |   17/12/2025             |  Aula extra / Revisão de menção
+
+**Aula**  | **Data**   | **Conteúdo**
+---------:|:----------:|:----------
+1	      | 16/03/2026 | Apresentação do plano de ensino
+2	      | 18/03/2026 | Revisão de programação - parte 1
+3	      | 23/03/2026 | Revisão de programação - parte 2; Exercícios de revisão de programação básica
+4	      | 25/03/2026 | Exercícios de revisão de programação básica; Estudo dirigido
+5	      | 30/03/2026 | **Avaliação 1**
+6	      | 01/04/2026 | Introdução a Orientação por Objetos - parte 1
+7	      | 06/04/2026 | Exercícios - Introdução a Orientação por Objetos - parte 1
+8	      | 08/04/2026 | Introdução a Orientação por Objetos - parte 2
+9	      | 13/04/2026 | Exercícios - Introdução a Orientação por Objetos - parte 2
+10	      | 15/04/2026 | Modularidade / Encapsulamento
+11	      | 20/04/2026 | Facultativo
+12	      | 22/04/2026 | Exercícios Modularidade / Encapsulamento
+13	      | 27/04/2026 | Atividade extra-classe
+14	      | 29/04/2026 | Atividade extra-classe
+15	      | 04/05/2026 | Exercícios Revisão de Conceitos OO ; Estudo Dirigido
+16	      | 06/05/2026 | **Avaliação 2**
+17	      | 11/05/2026 | Herança - parte 1
+18	      | 13/05/2026 | Exercícios Herança - parte 1
+19	      | 18/05/2026 | Herança - parte 2
+20	      | 20/05/2026 | Exercícios Herança - parte 2
+21	      | 25/05/2026 | Polimorfismo - parte 1
+22	      | 27/05/2026 | Exercícios Polimorfismo - parte 1
+23	      | 01/06/2026 | Polimorfismo - parte 2
+24	      | 03/06/2026 | Exercícios Polimorfismo - parte 2
+25	      | 08/06/2026 | Exceções - parte 1
+26	      | 10/06/2026 | Exercícios Exceções - parte 1
+27	      | 15/06/2026 | Exceções - parte 2
+28	      | 17/06/2026 | Exercícios Exceções - parte 2
+29	      | 22/06/2026 | **Avaliação 3**
+30	      | 24/06/2026 | Threads
+31	      | 29/06/2026 | **Entrega final do trabalho**
+32	      | 01/07/2026 | **Entrega final do trabalho**
+33	      | 06/07/2026 | Aula extra / Revisão de menção
+34	      | 08/07/2026 | Aula extra / Revisão de menção
+35	      | 13/07/2026 | Aula extra / Revisão de menção
+36	      | 15/07/2026 | Aula extra / Revisão de menção
+
 
 
 ---
