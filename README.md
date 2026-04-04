@@ -14,8 +14,8 @@ FGA - Faculdade do Gama
 3	      | 23/03/2026 | [Revisão de programação - parte 2](/aula3); Exercícios de revisão de programação básica
 4	      | 25/03/2026 | [Exercícios de revisão de programação básica](/aula4); [Estudo dirigido](/aula4/estudoDirigido)
 5	      | 30/03/2026 | [**Avaliação 1**](/aula5)
-6	      | 01/04/2026 | Introdução a Orientação por Objetos - parte 1
-7	      | 06/04/2026 | Exercícios - Introdução a Orientação por Objetos - parte 1
+6	      | 01/04/2026 | [Introdução a Orientação por Objetos - parte 1](/aula6)
+7	      | 06/04/2026 | [Exercícios - Introdução a Orientação por Objetos - parte 1](/aula7)
 8	      | 08/04/2026 | Introdução a Orientação por Objetos - parte 2
 9	      | 13/04/2026 | Exercícios - Introdução a Orientação por Objetos - parte 2
 10	      | 15/04/2026 | Modularidade / Encapsulamento
