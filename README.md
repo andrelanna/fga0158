@@ -71,3 +71,7 @@ O enunciado do trabalho prático será divulgado em breve.
 
 #### Horário de atendimento
 Segundas e quartas, de 13:00 às 14:00 horas.
+
+## Links
+
+[![Hypercommit](https://img.shields.io/badge/Hypercommit-DB2475)](https://hypercommit.com/fga0158)
