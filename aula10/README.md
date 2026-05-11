@@ -4,63 +4,36 @@ FGA0158 - Orientação por Objetos
 
 ---
 
-## Aula 9 - Herança
+## Aula 10 - Modularidade / Encapsulamento
 
 **Tópicos da aula**
-Herança:
-- Herança simples
-- Herança múltipla
-- Agregação e delegação
+- Modularidade
+- Encapsulamento
+  - Ocultação de informação
+  - Interfaces de objetos
+  - Modificadores de acesso 
+  - Modificadores de escopo
+
 
 **Slides da aula**
 
-* [Slides](https://docs.google.com/presentation/d/1WyVHU2jWJYvL3mtqZuCYZ2pF3FAS3UIS4YfStOJXAq8/edit?usp=sharing)
-
-**Vídeos da aula**
-* [Video](link para o video)
-* [Video - modelagem UML](https://youtu.be/ufhNxklyZIk)
-* [Video](link para o video)
-
-
-**Exemplo feito em aula**
-* [Arquivo do modelo UML feito em Draw.io](exemploHeranca.drawio)
-
-Cadastro de professores e alunos, sem utilização de herança:  
-![Exemplo sem herança](exemploSemHeranca.png)
-
-Cadastro de professores e alunos, com utilização de herança para generalizar
-atributos e métodos:    
-![Exemplo com herança](exemploComHeranca1.png)
-
-Cadastro de professores e alunos, com utilização de herança utilizando uma
-referência de uma superclasse (```PessoaFísica```) para referenciar objetos de
-suas subclasses:    
-![Exemplo com herança](exemploComHeranca2.png)
-
-
-**Vídeos da aula**
-* [Video](link para o video)
-* [Video - modelagem UML](https://youtu.be/ufhNxklyZIk)
-* [Video](link para o video)
-
-
-**Exemplo feito em aula**
-* [Arquivo do modelo UML feito em Draw.io](exemploHeranca.drawio)
-
-Cadastro de professores e alunos, sem utilização de herança:  
-![Exemplo sem herança](exemploSemHeranca.png)
-
-Cadastro de professores e alunos, com utilização de herança para generalizar
-atributos e métodos:    
-![Exemplo com herança](exemploComHeranca1.png)
-
-Cadastro de professores e alunos, com utilização de herança utilizando uma
-referência de uma superclasse (```PessoaFísica```) para referenciar objetos de
-suas subclasses:    
-![Exemplo com herança](exemploComHeranca2.png)
-
+* [Slides](https://docs.google.com/presentation/d/11oY6Awv0HLV2qre82NJaxqZrQCo0_8RkUSr_qVKd28w/edit?usp=sharing)
 
 
 **Exercícios de fixação**
 
+1. Crie um programa capaz de criar uma turma de uma determinada disciplina e
+   matricular os seus alunos, respeitando o seguinte projeto: 
 
+![Exercicio1](exercicio1.png)
+
+O projeto deve ser capaz de criar várias turmas, de modo que para cada turma
+sejam matriculados vários alunos (previamente criados pelo próprio programa).
+Dica: crie um Diagrama UML de Objetos para visualizar como os objetos de Turma e
+Aluno se relacionarão durante a execução do programa. 
+
+
+2. Evolua o exercício 1 de modo que a classe Turma seja responsável por manter
+   as referências dos objetos Turma criados durante a execução do programa. A
+classe deverá ainda possuir métodos para criar, apagar, alterar e pesquisar as
+turmas já criadas. 

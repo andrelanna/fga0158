@@ -18,7 +18,7 @@ FGA - Faculdade do Gama
 7	      | 06/04/2026 | Exercícios - Introdução a Orientação por Objetos - parte 1
 8	      | 08/04/2026 | [Introdução a Orientação por Objetos - parte 2](/aula8)
 9	      | 13/04/2026 | Exercícios - Introdução a Orientação por Objetos - parte 2
-10	      | 15/04/2026 | Modularidade / Encapsulamento
+10	      | 15/04/2026 | [Modularidade / Encapsulamento](/aula10)
 11	      | 20/04/2026 | Facultativo
 12	      | 22/04/2026 | Exercícios Modularidade / Encapsulamento
 13	      | 27/04/2026 | [Atividade extra-classe](/ativsExtraClasse/modularidadeEncapsulamento)
