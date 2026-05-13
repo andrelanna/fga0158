@@ -24,11 +24,11 @@ FGA - Faculdade do Gama
 13	      | 27/04/2026 | [Atividade extra-classe](/ativsExtraClasse/modularidadeEncapsulamento)
 14	      | 29/04/2026 | [Atividade extra-classe](/ativsExtraClasse/modularidadeEncapsulamento)
 15	      | 04/05/2026 | Exercícios Revisão de Conceitos OO ; Estudo Dirigido
-16	      | 06/05/2026 | **Avaliação 2**
+16	      | 06/05/2026 | ~~**Avaliação 2**~~ 
 17	      | 11/05/2026 | Herança - parte 1
 18	      | 13/05/2026 | Exercícios Herança - parte 1
 19	      | 18/05/2026 | Herança - parte 2
-20	      | 20/05/2026 | Exercícios Herança - parte 2
+20	      | 20/05/2026 | Exercícios Herança - parte 2 / **Avaliação 2**
 21	      | 25/05/2026 | Polimorfismo - parte 1
 22	      | 27/05/2026 | Exercícios Polimorfismo - parte 1
 23	      | 01/06/2026 | Polimorfismo - parte 2
