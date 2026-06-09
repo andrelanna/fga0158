@@ -29,9 +29,9 @@ FGA - Faculdade do Gama
 18	      | 13/05/2026 | Exercícios Herança - parte 1
 19	      | 18/05/2026 | Herança - parte 2
 20	      | 20/05/2026 | Exercícios Herança - parte 2 / **Avaliação 2**
-21	      | 25/05/2026 | Polimorfismo - parte 1
+21	      | 25/05/2026 | [Polimorfismo - parte 1](/aula21)
 22	      | 27/05/2026 | Exercícios Polimorfismo - parte 1
-23	      | 01/06/2026 | Polimorfismo - parte 2
+23	      | 01/06/2026 | [Polimorfismo - parte 2](/aula23)
 24	      | 03/06/2026 | Exercícios Polimorfismo - parte 2
 25	      | 08/06/2026 | Exceções - parte 1
 26	      | 10/06/2026 | Exercícios Exceções - parte 1
