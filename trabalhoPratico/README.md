@@ -7,7 +7,7 @@ Prof. André Luiz Peron Martins Lanna
 ### Trabalho Prático de Orientação por Objetos  
 ---  
   
-### Cenário: Sistema de Mobilidade Urbana (_Ride-Sharing_) 
+### Cenário: Sistema de Vendas e Fidelidade — Cafeteria Geek "Byte & Brew
 
 ### Contexto: 
 
