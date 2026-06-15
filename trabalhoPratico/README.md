@@ -4,197 +4,239 @@ FGA - Faculdade do Gama
 OO - Orientação por Objetos  
 Prof. André Luiz Peron Martins Lanna  
   
-#### Trabalho Prático de Orientação por Objetos  
+### Trabalho Prático de Orientação por Objetos  
 ---  
   
 ### Cenário: Sistema de Mobilidade Urbana (_Ride-Sharing_) 
 
 ### Contexto: 
 
+Seja bem-vindo ao universo da **Byte & Brew**, uma cafeteria temática
+inteiramente pensada para o público *geek*, entusiastas de tecnologia, cultura
+pop, jogos de tabuleiro e literatura de fantasia.
 
-O objetivo deste projeto é modelar e desenvolver um protótipo de sistema para um
-aplicativo de compartilhamento de corridas, similar a plataformas como Uber, 99
-ou Cabify. Este ecossistema digital conecta dois tipos principais de usuários:
-passageiros, que necessitam de transporte, e motoristas, que oferecem o serviço.
+Para que possamos implementar um sistema orientado a objetos de suporte a essa
+operação, é fundamental compreendermos como a cafeteria funciona no mundo real:
+seu cardápio, a dinâmica de atendimento, as regras de negócio de suas vendas e o
+seu aclamado programa de fidelidade.
 
-Ambos, passageiros e motoristas, são tipos especializados de um usuário
-básico do sistema, compartilhando atributos comuns como nome, CPF, e-mail,
-telefone e uma senha para autenticação. Contudo, eles possuem características e
-responsabilidades distintas.
 
-O passageiro é o ator que inicia a interação central. Para utilizar o sistema,
-ele deve cadastrar ao menos um método de pagamento. O sistema deve suportar
-diferentes formas de pagamento, como cartão de crédito, PIX ou dinheiro. Cada
-método de pagamento terá uma lógica distinta para processar a cobrança no final
-da corrida.
+### O Cardápio e os Itens da Cafeteria
 
-O motorista, por sua vez, deve possuir uma CNH (Carteira Nacional de
-Habilitação) válida. Além disso, cada motorista está associado a um único
-veículo ativo por vez. O veículo é caracterizado por placa, modelo, cor e
-ano. Os motoristas também possuem um status de disponibilidade (ex: "Online",
-"Offline", "Em Corrida") que determina se eles podem ou não receber novas
-solicitações.
+A engrenagem principal da **Byte & Brew** é o seu cardápio personalizado. Ele é
+dividido em duas grandes categorias de consumo:
 
-A entidade central do sistema é a corrida. Uma corrida é criada quando um
-passageiro faz uma solicitação, especificando um local de partida e um destino.
-O sistema deve, então, calcular um preço estimado. Esse cálculo de preço não é
-fixo; ele depende da categoria de serviço solicitada (ex: categoria comum,
-categoria luxo). Cada categoria possui uma fórmula de precificação
-que pode envolver uma tarifa base diferente e um multiplicador
-distinto por quilômetro rodado. Considere os seguintes valores para tarifa base
-e preço por quilômetro rodado. 
+* **Comidas (Comestíveis):** Itens produzidos na cozinha ou confeitaria. Possuem
+  um tempo de preparo estimado e regras de restrição alimentar (como opções
+veganas ou sem glúten). Exemplos do cardápio incluem o *Lembas Bread* (um pão
+doce artesanal) e o *Portal Cake* (uma fatia de bolo de chocolate).
+* **Bebidas (Poções):** Itens líquidos que podem ser servidos quentes ou
+  gelados. Possuem uma classificação de tamanho padrão (Pequeno, Médio ou
+Grande) e um indicador de dosagem de cafeína. Exemplos icônicos são o *Café do
+Programador* (um espresso duplo ultraforte) e a *Poção de Mana* (uma soda
+italiana).
 
-| Categoria | Tarifa-base (R$/corrida) | Multiplicador (R$/kilômetro) |
-|:---------:|:------------------------:|:----------------------------:|
-| Comum     | R$ 5,00                  |  R$ 1,00                     | 
-| Luxo      | R$ 9,00                  |  R$ 2,20                     | 
+Cada item do cardápio possui um preço base, um código identificador único e uma
+quantidade em estoque que precisa ser rigorosamente monitorada para evitar que
+um pedido seja aceito sem que haja ingredientes disponíveis.
 
-Quando a solicitação é feita, o sistema a encaminha para motoristas "Online"
-próximos. Um motorista pode aceitar ou rejeitar a solicitação. Uma vez que um
-motorista aceita, a corrida é formalmente iniciada e seu status muda de
-"Solicitada" para "Aceita". O passageiro é notificado sobre o motorista e o
-veículo a caminho.
 
-A corrida deve ser gerenciada por um ciclo de vida claro (ex: `iniciarViagem()`,
-`finalizarViagem()`, `cancelar()`).  Durante o trajeto (status "Em Andamento"),
-a localização de ambos poderia ser (idealmente) monitorada. Ao chegar ao
-destino, o motorista finaliza a corrida.
+### A Dinâmica de Atendimento e Vendas
 
-Neste momento, o sistema deve executar duas ações cruciais:
-1.  Processar o pagamento: o sistema deve acionar o método
-    `processarPagamento()` do método de pagamento escolhido pelo passageiro para
-aquela corrida.
-2.  Coletar feedback: tanto o passageiro quanto o motorista devem ter a
-    oportunidade de avaliar um ao outro (ex: nota de 1 a 5 estrelas). O sistema
-deve armazenar o histórico de avaliações e manter a média de avaliação de cada
-usuário (motorista e passageiro) atualizada de forma segura e encapsulada.
+O fluxo de uma venda na cafeteria segue passos bem definidos, operando sempre
+sob o comando de um atendente e baseando-se nas escolhas dos clientes:
 
-**Requisito Adicional: Tratamento de Exceções**
+1. **Abertura do Pedido:** Quando um cliente se aproxima do balcão, uma nova
+comanda (pedido) é gerada. Cada pedido recebe um número de identificação
+sequencial único para o controle interno da cozinha.
+2. **Inclusão de Itens:** O cliente escolhe os itens do cardápio. Um mesmo
+pedido pode conter múltiplos itens, e o cliente pode solicitar mais de uma
+unidade do mesmo produto (por exemplo: "duas Poções de Mana e um Portal Cake").
+À medida que os itens são adicionados, o sistema da cafeteria vai calculando o
+valor parcial.
+3. **Fechamento e Pagamento:** O pedido é totalizado. O valor final depende não
+apenas da soma dos produtos, mas também de possíveis descontos ou promoções
+ativas no dia (por exemplo, "Dia do Orgulho Nerd" com 10% de desconto em
+bebidas).
 
-Além da lógica principal, o sistema deverá demonstrar robustez através de um
-tratamento de exceções adequado. Os desenvolvedores deverão modelar e
-implementar classes de exceção personalizadas (exceções checadas ou não
-checadas, conforme a necessidade) para lidar com fluxos anormais do negócio. O
-tratamento de exceções deve ser aplicado, no mínimo, nas seguintes situações:
 
-1.  **Falha no Pagamento:** o que acontece se, ao `finalizarViagem()`, o
-    `MetodoPagamento` do passageiro falhar (ex: `SaldoInsuficienteException` ou
-`PagamentoRecusadoException`)? O sistema não deve travar; a corrida deve ser
-marcada como "Pendente de Pagamento" e o passageiro deve ser impedido de
-solicitar novas corridas até a regularização.
-2.  **Indisponibilidade de Motoristas:** ao solicitar uma corrida, se o sistema
-    não encontrar nenhum motorista "Online" compatível na região dentro de um
-tempo limite, ele deve lançar uma exceção específica (ex:
-`NenhumMotoristaDisponivelException`) que será tratada pela camada superior
-(informando o passageiro).
-3.  **Transição de Estado Inválida:** tentar executar uma ação que não condiz
-    com o estado atual da corrida (ex: um motorista tentar `iniciarViagem()` de
-uma corrida que já foi `finalizada`, ou um passageiro tentar `cancelar()` uma
-corrida já em andamento) deve lançar uma exceção (ex:
-`EstadoInvalidoDaCorridaException`).
-4.  **Validação de Negócio:** tentativas de operações inválidas, como um
-    passageiro com pendências financeiras tentando solicitar uma nova corrida,
-ou um motorista tentando ficar "Online" com um veículo não aprovado ou com CNH
-vencida, devem ser impedidas por exceções de negócio (ex:
-`PassageiroPendenteException` ou `MotoristaInvalidoException`).
+### O Programa de Fidelidade: "XP do Cliente"
+
+O grande diferencial da **Byte & Brew** é o seu programa de relacionamento. Na
+cafeteria, os clientes não acumulam apenas "pontos", eles acumulam **XP
+(Experiência)**.
+
+Qualquer pessoa pode comprar na cafeteria de forma anônima (como um cliente
+casual), mas aqueles que se cadastram no programa de fidelidade passam a ter
+suas compras associadas ao seu CPF e são classificados em duas categorias de
+aventureiros:
+
+### 1. Cliente Standard (Aventureiro Iniciante)
+
+É o nível inicial de qualquer cliente cadastrado.
+
+* **Acúmulo de XP:** A cada R$ 1,00 gasto em compras na cafeteria, o cliente
+  ganha 1 ponto de XP.
+* **Benefício:** O XP acumulado pode ser guardado para uma futura conversão em
+  descontos diretos no caixa.
+
+### 2. Cliente VIP (Mestre da Guilda)
+
+Clientes frequentes que atingem um alto nível de lealdade recebem o status VIP.
+
+* **Acúmulo de XP:** Por sua dedicação, eles possuem um bônus multiplicador:
+  ganham 2 pontos de XP para cada R$ 1,00 gasto.
+* **Benefício de Resgate:** Além de acumular XP mais rápido, o Cliente VIP tem o
+  direito exclusivo de **pagar um pedido inteiramente utilizando seus pontos de
+XP**, caso possua saldo suficiente para cobrir o valor total da compra. A taxa
+de conversão padrão da cafeteria determina que cada 10 pontos de XP equivalem a
+R$ 1,00 em compras.
+
+
+### Regras de Restrição e Segurança do Negócio
+
+Para que a operação comercial funcione sem prejuízos, a cafeteria opera sob
+regras rígidas:
+
+* **Garantia de Estoque:** Não é permitido vender um item que não esteja
+  disponível. Se o estoque zerar, a venda daquele produto é imediatamente
+bloqueada.
+* **Consistência de Resgate:** Um cliente não pode tentar pagar uma conta com XP
+  se não tiver saldo suficiente.
+* **Identificação:** Para pontuar ou resgatar benefícios de fidelidade, é
+  obrigatório que o cliente informe um CPF válido e previamente cadastrado. Se o
+CPF não constar nos registros da cafeteria, a venda prossegue como cliente
+casual (sem benefícios).
+
+
+--------------------------------------------------------------------------------
 
 
 ### Enunciado do Trabalho Prático 
 
-**Título:** Sistema de Mobilidade Urbana (_Ride-Sharing_) 
+**Título:** Sistema de Vendas e Fidelidade — Cafeteria Geek "Byte & Brew"
 
-**Objetivo:**  
-Desenvolver um sistema em Java que aplique todos os conceitos de orientação a
-objetos vistos em sala de aula ao longo da disciplina, garantindo que
-modularidade, encapsulamento, herança, polimorfismo e tratamento de exceções
-personalizadas sejam explicitamente consideradas na elaboração do trabalho. 
+1. **Introdução e Objetivo:**  
+O objetivo deste trabalho prático é aplicar os conceitos fundamentais de
+Orientação a Objetos (OO) por meio da modelagem e do desenvolvimento de um
+sistema de gerenciamento de vendas e fidelidade para a cafeteria temática Byte &
+Brew.
 
-### Requisitos Funcionais: 
-
-1. **Cadastro de usuários**
-   - Cadastro de Usuários
-     - Cadastro de Passageiros
-     - Cadastro de Motoristas
-       - Cadastro de Veículos
-
-2. **Gerenciamento das corridas**
-   - O passageiro deverá ser capaz de solicitar uma corrida, com um meio de
-     pagamento já informado
-   - O sistema deverá encontrar um motorista disponível e atribui-lo à corrida
-     - O passageiro apenas poderá cancelar a corrida quando ainda não tiver um
-       motorista atribuído à corrida 
-   - Para a corrida, deverão ser apresentados o valor-base, o valor pago pela
-     distância percorrida e o valor total, com base no tipo de veículo do
-     motorista escolhido
-   - Apenas o motorista poderá finalizar a corrida. 
-   - Durante todo o gerenciamento, a corrida deverá ter seus estados alterados
-     adequadamente. 
-
-2. **Tratamento de Exceções**
-   - As seguintes exceções deverão ser criadas, disparadas e capturadas nos
-     seguintes contextos: 
-     - SaldoInsuficienteException: quando o método de pagamento for dinheiro,
-       mas não há saldo suficiente na conta do usuário dentro do aplicativo
-     - PagamentoRecusadoException: quando o método de pagamento for cartão de
-       crédito, mas a operadora recusa o pagamento.
-     - NenhumMotoristaDisponivelException: quando não há nenhum motorista
-       disponível para atender à solicitação de viagem por um usuário. 
-     - EstadoInvalidoDaCorridaException: 
-         - quando o motorista tenta finalizar uma viagem que ainda não foi
-           iniciada;
-         - quando o passageiro tenta cancelar uma viagem que já foi iniciada; 
-         - quando o passageiro tenta realizar o pagamento de uma viagem que
-           ainda está em curso. 
-
-### Requisitos técnicos (conteúdos avaliados): 
-1. **Classes e Objetos / Atributos e Métodos / Associações entre Objetos** 
-
-- Realize as associações entre as classes de modo a considerar o contexto da
-  aplicação. Defina, para cada associação, seu nome e suas multiplicidades. 
-- Apresente, através de um diagrama de Classes UML, as classes, seus atributos e
-  métodos, suas associações e multiplicidades, seus pacotes. 
-- Explore, o quanto for possível, relações de herança entre as classes que
-  compõem seu projeto. 
-- Explore, o quanto for possível, os elementos de escopo estático. 
+Os grupos deverão demonstrar competência tanto na etapa de abstração e projeto
+de software (utilizando diagramas de classes UML) quanto na implementação
+utilizando a linguagem Java.
 
 
-2. **Ocultação de Informação e Retenção de Estado** 
 
-- Atributos privados com métodos públicos para acesso (getters/setters). 
-- Acesso direto a elementos definidos em outras classes, **somente** em relações
-  de herança. 
+2. **Requisitos funcionais (RF)**
 
+O sistema deverá ser capaz de gerenciar três pilares principais: clientes,
+produtos e vendas. Todos os cadastros deverão contemplar as funcionalidades de
+criação, pesquisa, atualização e remoção de itens do cadastro (CRUD). 
 
-3. **Modularidade** 
+2.1. **Cadastro e Gestão de Produtos**
 
-Separe o código em pacotes como: 
-- entidades (classes base, que descrevem elementos do domínio da aplicação). 
-- serviços (lógica de agendamento). 
-- excecoes (exceções customizadas). 
+O cardápio da cafeteria é composto por produtos genéricos, mas que se dividem em
+duas categorias específicas:
 
-
-4. **Polimorfismo**
-
-- Use, o quanto for possível, polimorfismo. 
-- Polimorfismo por sobrescrita e sobrecarga de métodos são obrigatórios no
-  código. 
-- Polimorfismo paramétrico será avaliado pela utilização de _generics_ em Java.
-  Utilize-os, principalmente, ao representar as associações entre objetos. 
+- Comida: Deve conter atributos como tempo de preparo (em minutos) e um
+  indicador se é vegano/sem glúten.
+- Bebida: Deve conter atributos como tamanho (P, M, G) e a quantidade de cafeína
+  (em mg).
+- Geral para todo Produto: Todo produto deve possuir obrigatoriamente um código
+  identificador único, nome, preço base e quantidade em estoque.
 
 
-5. **Exceções Personalizadas** 
+2.2. **Cadastro e Gestão de Clientes (Programa de Fidelidade)**
 
-Crie as seguintes exceções personalizadas e faça o devido lançamento, conforme
-descrições abaixo: 
-- SaldoInsuficienteException: quando não há saldo suficiente para pagamento
-- PagamentoRecusadoException: quando a operadora de cartão nega o pagamento
-- NenhumMotoristaDisponivelException: quando não há motorista disponivel
-- EstadoInvalidoDaCorridaException: quando a conversão de estado é inválida
+O sistema deve permitir o cadastro de clientes vinculados ao programa de
+fidelidade. As compras podem ser feitas por um Cliente Casual (não cadastrado,
+não acumula pontos), mas para os cadastrados existem duas categorias:
+
+- Cliente Standard: Acumula 1 ponto de XP para cada R$ 1,00 gasto.
+- Cliente VIP: Acumula 2 pontos de XP para cada R$ 1,00 gasto. Além disso,
+  possui o método exclusivo de pagar uma compra inteiramente resgatando seus
+  pontos de XP (onde cada 10 pontos de XP = R$ 1,00 de desconto).
+- Geral para Clientes Cadastrados: Devem possuir nome, CPF único e saldo
+  acumulado de XP.
+
+
+2.3. **Registro e Fluxo de Vendas** 
+
+- O sistema deve permitir abrir um novo pedido (venda) associado a um atendente
+  e, opcionalmente, a um cliente cadastrado.
+- Deve ser possível adicionar múltiplos itens ao pedido, informando o produto e
+  a quantidade desejada.
+- O sistema deve calcular o valor total do pedido.
+- Regra de Promoção (Interface): O sistema deve aplicar um desconto opcional na
+  venda caso seja um "Dia de Evento Geek" (aplicando 10% de desconto no valor
+  total das bebidas).
+- Ao finalizar a venda, o estoque dos produtos deve ser atualizado e, se houver
+  um cliente cadastrado, os pontos de XP devem ser devidamente computados ou
+  debitados.
+
+
+3. **Requisitos não-funcionais (RNF) e Regras de Negócio**
+
+**3.1. Tratamento de Exceções Personalizadas**
+
+O sistema não deve permitir operações inconsistentes. Vocês deverão criar e
+lançar obrigatoriamente as seguintes exceções customizadas (`checked` ou
+`unchecked`, justifiquem a escolha):
+
+- `EstoqueInsuficienteException`: Deve ser lançada no momento em que se tenta
+  adicionar um item ao pedido, mas a quantidade solicitada é maior do que a
+  quantidade disponível no estoque do produto.
+- `PontosInsuficientesException`: Deve ser lançada quando um ClienteVIP tenta
+  finalizar o pagamento de um pedido utilizando o resgate de pontos XP, mas o
+  seu saldo de XP atual é inferior ao necessário para cobrir o valor total da
+  compra.
+
+**3.2. Restrições Arquiteturais e de Escopo**
+
+- Encapsulamento estrito: Nenhum atributo de classe deve ser exposto
+  publicamente (`public`). Utilizem modificadores de acesso adequados
+  (`private`, `protected`).
+- Modularidade (Pacotes): O código Java deve ser organizado obrigatoriamente nas
+  seguintes estruturas de pacotes:
+  - `br.edu.cafeteria.modelo` (para as classes de negócio: Produto, Cliente,
+    Pedido, etc.)
+  - `br.edu.cafeteria.excecao` (para as classes de exceção criadas)
+  - `br.edu.cafeteria.servico` (para as interfaces e regras de
+    desconto/validação)
+  - `br.edu.cafeteria.app` (para a classe principal com o método `main`)
+
+
+**4. Checklist de Conceitos OO Obrigatórios**
+
+Para obter a nota máxima, a implementação em Java deve deixar explícita a
+aplicação dos seguintes tópicos:
+
+[  ]  **Classes, Objetos e Associações:** Relacionamento entre Pedido, ItemPedido,
+      Produto e Cliente.   
+[  ]  **Modificadores de Escopo (Estático vs. Dinâmico):** Uso de atributos
+      estáticos para gerar o número sequencial automático dos pedidos e uma
+      constante para a taxa de conversão de pontos XP.   
+[  ]  **Herança Simples:** Comida e Bebida herdando de Produto; ClienteStandard
+      e ClienteVIP herdando de uma classe base Cliente (ou estrutura equivalente
+      fundamentada).   
+[  ]  **Polimorfismo por Inclusão:** A classe Pedido deve armazenar uma lista
+      de produtos e processá-los genericamente.   
+[  ]  **Polimorfismo por Sobrescrita:** O método de calculo de pontos de
+      fidelidade deve ser sobrescrito nas subclasses de cliente para refletir as
+      diferentes taxas de ganho de XP.   
+[  ]  **Polimorfismo por Sobrecarga:** O método de adicionar itens ao pedido deve
+      possuir duas assinaturas: adicionarItem(Produto p) (adiciona 1 unidade por
+      padrão) e adicionarItem(Produto p, int quantidade).   
+[  ]  **Polimorfismo por Coerção:** Demonstrar de forma consciente a conversão de tipos
+[  ]  **Interfaces:** Criação de uma interface (ex: Promocional) para aplicar
+      descontos em dias de eventos.   
+
 
 
 ## Entrega:  
 
-Data de entrega: 01/12/2025, 12:00hs (impreterivelmente).
+Data de entrega: 29/06/2026, 23:59hs (impreterivelmente).
 
 1. Documentação 
 

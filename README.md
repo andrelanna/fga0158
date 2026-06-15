@@ -37,9 +37,9 @@ FGA - Faculdade do Gama
 26	      | 10/06/2026 | Exercícios Exceções - parte 1
 27	      | 15/06/2026 | Exceções - parte 2
 28	      | 17/06/2026 | Exercícios Exceções - parte 2
-29	      | 22/06/2026 | **Avaliação 3**
+29	      | 22/06/2026 | ~~**Avaliação 3**~~
 30	      | 24/06/2026 | Threads
-31	      | 29/06/2026 | **Entrega final do trabalho**
+31	      | 29/06/2026 | **Avaliação 3** / **[Entrega final do trabalho](/trabalhoPratico)**
 32	      | 01/07/2026 | **Entrega final do trabalho**
 33	      | 06/07/2026 | Aula extra / Revisão de menção
 34	      | 08/07/2026 | Aula extra / Revisão de menção
